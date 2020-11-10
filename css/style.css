@@ -9,3 +9,12 @@ body {
 table {
     width: 500px;
 }
+
+.team-photo {
+    height: 200px;
+    width: 200px;
+    border: 3px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #00ffb9;
+}
