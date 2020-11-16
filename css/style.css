@@ -1,13 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Saira Condensed', sans-serif;
-} 
-#top-logo {
-    width: 180px;
-    height: 85px;
+    font-size: 12pt;
+}
+
+#container {
+    margin: 0 auto;
+    width: 100%;
+}
+
+header{
+    background-color: #eaeaea;
+    text-align: center;
+    font-size: 9pt;
+}
+
+hr {
+    border: 3px solid #00ffb9
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+nav ul{
+    list-style: none;
+    display: inline;
+    position: absolute;
+    top: 50px;
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 20pt;
+}
+
+nav ul li a{
+    color: black;
+    font-weight: bold;
+    margin: 0 75px;
 }
 
 table {
     width: 500px;
+}
+
+#telephone-top {
+    width: 150px;
+    height: 50px;
+    background-color: #b9faf8;
+    position: relative;
+    left: 90%;
+    text-align: center;
+    border-radius: 10px 10px 0 0 ;
+}
+
+/*Images*/
+
+#top-logo {
+    width: auto;
+    height: 100px;
+    margin-left: 150px;
 }
 
 .team-photo {
@@ -17,4 +75,10 @@ table {
     border-radius: 50%;
     border-style: solid;
     border-color: #00ffb9;
+}
+
+#tel-icon {
+    width: 20px;
+    height: 20px;
+    padding: 15px 0;
 }
