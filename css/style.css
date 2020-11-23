@@ -14,9 +14,17 @@ body {
 }
 
 header{
+    font-size: 9pt;
+}
+
+#covid-msg {
     background-color: #eaeaea;
     text-align: center;
-    font-size: 9pt;
+    padding: 0 10px;
+}
+
+#top-logo a {
+    display: block;
 }
 
 hr {
@@ -30,8 +38,7 @@ a {
 
 nav ul{
     list-style: none;
-    display: inline;
-    position: absolute;
+    display: block;
     top: 50px;
 }
 
@@ -62,7 +69,11 @@ table {
 
 /*Images*/
 
-#top-logo {
+img {
+    max-width: 100%;
+}
+
+#top-logo img{
     width: auto;
     height: 100px;
     margin-left: 150px;
