@@ -83,6 +83,9 @@ table {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #search-overlay h1 {
@@ -95,10 +98,25 @@ table {
     font-weight: normal;
 }
 
+#src-core {
+    width: 100%;
+    background-color: RED;
+}
+
+#search-input {
+    border-radius: 5px;
+    width: 85%;
+    height: 30px;
+    padding-left: 10px;
+    border: 3px solid #515151;
+    margin-top: 40px;
+}
+
 /*Images*/
 
-img {
-    max-width: 100%;
+#search img {
+    width: 100%;
+    height: 500px;
 }
 
 #top-logo img{
