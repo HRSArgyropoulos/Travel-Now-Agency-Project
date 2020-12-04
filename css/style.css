@@ -67,6 +67,34 @@ table {
     border-radius: 10px 10px 0 0 ;
 }
 
+/*Search*/
+
+#search{
+    position: relative;
+}
+
+#search-overlay {
+    width: 70%;
+    height: 50%;
+    background-color: rgb(255,255,255,0.75);
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#search-overlay h1 {
+    font-size: 3em;
+    color: #515151;
+}
+
+#search-overlay h2 {
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
 /*Images*/
 
 img {
