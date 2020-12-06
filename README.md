@@ -33,6 +33,11 @@ Placed TOP DESTINATIONS text. Added the background div and created the destinati
 #### Description
 -Fixed margin issue and created view more button.
 
+## 6.12.20 C2
+
+### As captured on Instagram
+#### Description
+
 
 
 
