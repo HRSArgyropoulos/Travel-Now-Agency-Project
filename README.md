@@ -1,31 +1,40 @@
-#Travel Now Project Website
-#######################################################################################
+# Travel Now Project Website
+##################################################################################
 
-##4/12/2020
+## 4/12/2020 C1
 
-###Search Section v1
-####Description 
-Search section has been updated. Used inner div and display flex to center the content in the middle
+### Search Section 
+#### Description 
+-Search section has been updated. Used inner div and display flex to center the content in the middle
 of the transparent div.
-####Known Issues
+#### Known Issues
 -Margin of inner text div is not completely centered because of the text element.
 -Image resize for responsive -> we want it to be same height and not resizable 100% and cropped.
 
 
-##5/12/2020
+## 5/12/2020 C1
 
-###Search Section v2
-####Description
-Button Go has been updated in Assets/buttons/Components top of css.
-####Known Issues
-See v1
+### Search Section 
+#### Description
+-Button Go has been updated in Assets/buttons/Components top of css.
+-Minor ajdustment to input size.
+#### Known Issues
 
-
-###Top Destinations v1
-####Description
+### Top Destinations 
+#### Description
 Placed TOP DESTINATIONS text. Added the background div and created the destination cards.
-####Known Issues
+#### Known Issues
 -Destination name and paragraph not vertically aligned.
 -An issue with flex / margin top/bottom from the grey background.
+
+## 6/12/2020 C1
+
+### Top Destinations 
+#### Description
+-Fixed margin issue and created view more button.
+
+
+
+
 
 
