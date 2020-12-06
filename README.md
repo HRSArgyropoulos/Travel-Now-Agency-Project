@@ -37,6 +37,7 @@ Placed TOP DESTINATIONS text. Added the background div and created the destinati
 
 ### As captured on Instagram
 #### Description
+-Grid has been created and images have been inserted. Images must be adjusted to retain the aspect ratio.
 
 
 
