@@ -39,6 +39,12 @@ Placed TOP DESTINATIONS text. Added the background div and created the destinati
 #### Description
 -Grid has been created and images have been inserted. Images must be adjusted to retain the aspect ratio.
 
+## 6.12.20 C3
+
+### Our Partners
+#### Description
+-Partners section has been created.
+
 
 
 

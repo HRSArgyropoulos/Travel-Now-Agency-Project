@@ -245,6 +245,28 @@ table {
     grid-area: short-box3b;
 }
 
+/*Partners*/
+
+#partners-section {
+    background-color:#b9faf8;
+    position: relative;
+}
+
+#partners-section h1{ /*create class for that heading style*/
+    position: absolute;
+    top: -45px;
+    margin-left: 100px;
+}
+
+#partners-section div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 150px;
+    padding: 80px 0;
+}
+
 /*Images*/
 
 #search img {
