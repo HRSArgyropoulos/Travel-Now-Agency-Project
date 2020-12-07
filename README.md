@@ -45,8 +45,8 @@ Placed TOP DESTINATIONS text. Added the background div and created the destinati
 #### Description
 -Partners section has been created.
 
+## 7.12.20 C1
 
-
-
-
-
+### Customer Reviews
+#### Description
+-What our customers say section has been created with ul and using flex.

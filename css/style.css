@@ -6,7 +6,7 @@
 
 body,input,button {
     font-family: 'Saira Condensed', sans-serif;
-    font-size: 12pt;
+    font-size: 13pt;
 }
 
 #container {
@@ -20,6 +20,12 @@ header{
 
 h1 {
     font-size: 3.5em;
+}
+
+.headings {
+    position: absolute;
+    top: -45px;
+    margin-left: 100px;
 }
 
 /*Assets/Buttons/General Components*/
@@ -252,12 +258,6 @@ table {
     position: relative;
 }
 
-#partners-section h1{ /*create class for that heading style*/
-    position: absolute;
-    top: -45px;
-    margin-left: 100px;
-}
-
 #partners-section div {
     display: flex;
     justify-content: space-between;
@@ -265,6 +265,33 @@ table {
     align-items: center;
     margin: 0 150px;
     padding: 80px 0;
+}
+
+/* Customer Reviews */
+
+#customer-reviews {
+    margin-top: 100px;
+    background-color: #eaeaea;
+    position: relative;
+}
+
+#customer-reviews ul {
+    list-style: none;
+/*     background-color: yellow;
+ */    text-align: center;
+    display: flex;
+    padding: 80px 150px;
+}
+
+#customer-reviews ul li {
+    font-size: 1.2em;
+    flex: 1 20%;
+    margin: 0 2em;
+/*     background-color: white;*/
+}
+
+.review-text {
+    padding: 20px 50px;
 }
 
 /*Images*/
@@ -310,4 +337,8 @@ table {
     width: 20px;
     height: 20px;
     padding: 15px 0;
+}
+
+#customer-reviews img{
+    width: 1.8em;
 }
