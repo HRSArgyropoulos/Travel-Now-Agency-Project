@@ -22,6 +22,10 @@ h1 {
     font-size: 3.5em;
 }
 
+ul {
+    list-style: none;
+}
+
 .headings {
     position: absolute;
     top: -45px;
@@ -55,7 +59,6 @@ hr {
 
 a {
     text-decoration: none;
-    color: blue;
 }
 
 nav ul{
@@ -276,7 +279,6 @@ table {
 }
 
 #customer-reviews ul {
-    list-style: none;
 /*     background-color: yellow;
  */    text-align: center;
     display: flex;
@@ -294,6 +296,37 @@ table {
     padding: 20px 50px;
 }
 
+/* Footer */
+
+footer {
+    background-color: rgba(48, 37, 99, 1);
+    color: white;
+}
+
+footer a {
+    color: white; /* why */
+}
+
+footer > ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+footer hr {
+    width: 85%;
+    border: 1px solid #00ffb9;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+footer small {
+    display: flex;
+    justify-content: center;
+    padding: 0.5em;
+}
+
 /*Images*/
 
 #search img {
@@ -301,10 +334,9 @@ table {
     height: 500px;
 }
 
-#top-logo img{
+.logo img{
     width: auto;
     height: 100px;
-    margin-left: 150px;
 }
 
 #top-dest img {

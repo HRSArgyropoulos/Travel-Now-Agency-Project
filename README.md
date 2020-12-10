@@ -50,3 +50,9 @@ Placed TOP DESTINATIONS text. Added the background div and created the destinati
 ### Customer Reviews
 #### Description
 -What our customers say section has been created with ul and using flex.
+
+## 10.12.20 C1
+
+### Footer
+#### Description
+-Footer has been developed.
