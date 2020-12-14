@@ -92,6 +92,28 @@ table {
     border-radius: 10px 10px 0 0 ;
 }
 
+/*Page Heading*/
+
+
+.slashes {
+    color: #00ffb9;
+    display: inline;
+}
+
+.page-heading h1 {
+    color: white;
+    position: absolute;
+    bottom: 0px;
+}
+
+.page-heading {
+    position: relative;
+    background-image:
+    linear-gradient(to bottom, transparent, #000);    
+    height: 500px;
+    background-size: cover;
+}
+
 /*Search*/
 
 #search{
@@ -326,6 +348,9 @@ footer small {
     justify-content: center;
     padding: 0.5em;
 }
+
+/* Events */
+
 
 /*Images*/
 

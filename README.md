@@ -56,3 +56,9 @@ Placed TOP DESTINATIONS text. Added the background div and created the destinati
 ### Footer
 #### Description
 -Footer has been developed.
+
+## 14.12.20 C1 
+
+### Page Headings
+#### Description
+-Development of page gradient header images.
