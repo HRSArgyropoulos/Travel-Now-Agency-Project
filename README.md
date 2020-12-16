@@ -62,3 +62,10 @@ Placed TOP DESTINATIONS text. Added the background div and created the destinati
 ### Page Headings
 #### Description
 -Development of page gradient header images.
+
+## 16.12.20 C1
+
+### Header
+-Updated logo with new custom svg logo created in illustrator.
+### Top Destinations
+-Responsive Fixed
