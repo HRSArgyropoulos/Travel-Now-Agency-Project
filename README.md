@@ -69,3 +69,11 @@ Placed TOP DESTINATIONS text. Added the background div and created the destinati
 -Updated logo with new custom svg logo created in illustrator.
 ### Top Destinations
 -Responsive Fixed
+
+## 17.12.20 C1
+
+### NavBar 
+-Made nav with logo grid instead of flex, so i center the nav menu in the center of the page while having the logo on the left side. Works well until 768px tablet breakpoint (needs burger menu after that)
+
+### Search
+-Fixed background image to be responsive and resizable.

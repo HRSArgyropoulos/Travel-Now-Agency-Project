@@ -24,14 +24,18 @@
                 <a href="https://www.gov.uk/coronavirus" target="_blank">here</a>.
             </div>
             <!--Logo and Menu-->
-            <nav>
-                <ul>
-                    <a class="logo" href="index.html"><img src="assets/logo-svg.svg" alt="Travel Now Logo" /></a>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="destinations.html">Destinations</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="contact-us.html">Contact Us</a></li>
+            <nav class="grid">
+                <div id="logo"><a href="index.html"><img src="assets/logo-svg.svg" alt="Travel Now Logo" /></a>
+                </div>
+                <div id="nav-items">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                </div>
             </nav>
             <hr>
         </header>
@@ -41,7 +45,7 @@
         </div> -->
         <!--Search Section-->
         <div id="search">
-            <img style="width: 100%" src="images/search-backgrnd.png" alt="Background Search Img" />
+            <div id="background-img"></div>
             <div id="search-overlay">
                 <div id="src-core">
                     <h1 style="line-height: 1em">Your time for travel is now!</h1>
@@ -56,7 +60,7 @@
         <!--Top Destinations Section-->
         <div id="top-dest">
             <h1 class="headings">TOP DESTINATIONS</h1>
-            <!-- View more BUTTON -->
+            <button class="green-button desk-button" href="#">View More</button>
             <!--Top Destination Card #1-->
             <div id="dest-cards">
                 <div class="card">
@@ -100,7 +104,6 @@
                     </div>
                 </div>
             </div>
-            <button class="green-button" type="button" href="#">View More</button>
         </div>
         <!--Arrows and circles to scroll between them-->
         <!-- <h2>BERLIN</h2>
