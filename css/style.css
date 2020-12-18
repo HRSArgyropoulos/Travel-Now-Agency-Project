@@ -1,5 +1,8 @@
+/*General*/
+
 :root {
-    --primary-grey:rgb(239, 239, 239,0.75);
+    --primary-grey:rgb(239, 239, 239);
+    --dark-grey: #515151;
     --primary-green:#00ffb9;
 }
 
@@ -14,10 +17,6 @@ body,input,button {
     font-size: 13pt;
 }
 
-header{
-    font-size: 9pt;
-}
-
 h1 {
     font-size: 3.5em;
 }
@@ -26,15 +25,18 @@ ul {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 .headings {
     position: absolute;
     top: -45px;
     margin-left: 100px;
 }
 
-/*Assets/Buttons/General Components*/
 .green-button {
-    background-color:#00ffb9;
+    background-color:var(--primary-green);
     width: auto;
     height: 45px; /* (40+3+3) */
     border-radius: 10px;
@@ -43,11 +45,19 @@ ul {
     margin-left: 5px;
 }
 
+
+/*Covid*/
+
 #covid-msg {
     background-color: #eaeaea;
     text-align: center;
     padding: 0 10px;
+    font-size: 9pt;
+    max-height: 3.5em;
+    overflow: hidden;
 }
+
+/*Header*/
 
 #top-logo a {
     display: block;
@@ -55,18 +65,20 @@ ul {
 
 #logo img {
     height: 100px;
+    padding-left: 10px;
 }
 
 hr {
-    border: 3px solid #00ffb9
+    border: 3px solid var(--primary-green)
 }
 
-a {
-    text-decoration: none;
-}
+/*Nav*/
 
+nav {
+    max-height: 100px;
+    overflow: hidden;
+}
 nav ul{
-    list-style: none;
     overflow: hidden;
 }
 
@@ -74,12 +86,15 @@ nav ul{
     display: grid;
     grid-template-columns: 1fr auto 1fr;
 }
+
 #nav-items {
     align-self: center;
 }
+
 nav ul li {
     display: inline-block;
-    font-size: 20pt;
+    font-size: 1.5em;
+    white-space: nowrap;
 }
 
 #nav-items a{
@@ -95,25 +110,11 @@ nav ul li {
     border-top: 2px solid var(--primary-green);
 }
 
-table {
-    width: 500px;
-}
-
-#telephone-top {
-    width: 150px;
-    height: 50px;
-    background-color: #b9faf8;
-    position: relative;
-    left: 90%;
-    text-align: center;
-    border-radius: 10px 10px 0 0 ;
-}
-
 /*Page Heading*/
 
 
 .slashes {
-    color: #00ffb9;
+    color: var(--primary-green);
     display: inline;
 }
 
@@ -135,10 +136,11 @@ table {
 
 #search{
     position: relative;
+    width: 100%;
 }
 
 #search #background-img {
-    background: var(--primary-grey) url('../images/search-backgrnd.png');
+    background: var(--primary-grey) url('../images/search/slide1.jpg');
     background-position: center;
     background-repeat: no-repeat ;
     background-size: cover ;
@@ -147,8 +149,7 @@ table {
 }
 
 #search-overlay {
-    width: 70%;
-    height: 50%;
+    width: 75%;
     background-color: rgb(255,255,255,0.75);
     border-radius: 15px;
     position: absolute;
@@ -163,7 +164,7 @@ table {
 
 #search-overlay h1 {
     font-size: 3em;
-    color: #515151;
+    color: var(--dark-grey);
 }
 
 #search-overlay h2 {
@@ -171,24 +172,24 @@ table {
     font-weight: normal;
 }
 
-#src-core {
+#search-core {
+    padding: 2em 0;
     width: 100%;
-    /* background-color: RED; */
 }
 
 #search-input {
     border-radius: 5px;
     width: 85%;
-    height: 45px;
-    padding-left: 10px;
-    border: 3px solid #515151;
-    margin-top: 40px;
+    height: 3em;
+    padding: 10px; /*inner text*/
+    border: 3px solid var(--dark-grey);
+    margin: 20px 0;
 }
 
 /* Top Destinations */
 
 #top-dest {
-    background-color: rgb(239, 239, 239,0.75);
+    background-color: var(--primary-grey);
     width: 100%;
     margin: 100px 0;
     position: relative;
@@ -196,7 +197,7 @@ table {
 
 #top-dest h1{
     position: absolute;
-    top: -45px;
+    top: -50px;
     margin-left: 100px;
 }
 
@@ -246,24 +247,6 @@ table {
     border-radius: 0 10px 0 0 ;
 }
 
-@media screen and (max-width: 480px) {
-    .card p,.side-text {
-        font-size: 10pt;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .desk-button {
-        display: none;
-    }
-
-    .headings {
-        font-size: 2.5em;
-        margin: 0 auto!important;
-    }
-}
-
-
 /* As captured on Instagram */
 
 #insta-section {
@@ -301,7 +284,7 @@ table {
     justify-content: center;
     line-height: 4em;
     align-items: center;
-    background-color: #00ffb9;
+    background-color: var(--primary-green);
     border: 5px solid black;
 }
 
@@ -399,7 +382,7 @@ footer > ul {
 
 footer hr {
     width: 85%;
-    border: 1px solid #00ffb9;
+    border: 1px solid var(--primary-green);
     border-radius: 5px;
     margin: 0 auto;
 }
@@ -420,7 +403,7 @@ footer small {
     border: 3px;
     border-radius: 50%;
     border-style: solid;
-    border-color: #00ffb9;
+    border-color: var(--primary-green);
 }
 
 
@@ -428,3 +411,45 @@ footer small {
     width: 1.8em;
 }
 
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 480px) {
+    /*Top Destinations*/
+    .card p,.side-text {
+        font-size: 10pt;
+    }
+
+    #search-core h2 {
+        display: none;
+    }
+
+    #search-core h1 {
+        font-size: 2.5em;
+    }
+
+    #search-core {
+        padding: 1.3em 0;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    /*Covid*/
+
+    /*Top Destinations*/
+    .desk-button {
+        display: none;
+    }
+
+    .headings {
+        font-size: 2.5em;
+        margin: 0 auto!important;
+    }
+
+    /*Search*/
+
+    #search-overlay {
+        width: 100%;
+        border-radius: 0px;
+    }
+}

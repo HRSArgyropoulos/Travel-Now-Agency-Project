@@ -74,6 +74,12 @@ Placed TOP DESTINATIONS text. Added the background div and created the destinati
 
 ### NavBar 
 -Made nav with logo grid instead of flex, so i center the nav menu in the center of the page while having the logo on the left side. Works well until 768px tablet breakpoint (needs burger menu after that)
-
 ### Search
 -Fixed background image to be responsive and resizable.
+
+## 18.12.20 C1
+
+### General
+-Organized CSS (Media Queries bottom, img css moved to their respective css sections)
+### Search
+Optimized responsiveness  (tablet/mobile)
