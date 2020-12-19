@@ -82,4 +82,11 @@ Placed TOP DESTINATIONS text. Added the background div and created the destinati
 ### General
 -Organized CSS (Media Queries bottom, img css moved to their respective css sections)
 ### Search
-Optimized responsiveness  (tablet/mobile)
+-Optimized responsiveness  (tablet/mobile)
+
+## 19.12.20 C1
+
+### Partners
+-Fixed responsiveness 
+### What our customers say
+-Fixed responsiveness
