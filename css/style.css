@@ -128,7 +128,7 @@ nav ul li {
 .page-heading {
     position: relative;
     background-image:
-    linear-gradient(to bottom, transparent, #000),url(../images/events/header.png);    
+    linear-gradient(to bottom, transparent, #000),url(../images/header-photos/events-top.png);    
     height: 500px;
     background-size: cover;
 }

@@ -90,3 +90,9 @@ Placed TOP DESTINATIONS text. Added the background div and created the destinati
 -Fixed responsiveness 
 ### What our customers say
 -Fixed responsiveness
+
+## 19.12.20 C2
+
+### General 
+-Updated/organized images catalogs
+-Update favicon in all pages
