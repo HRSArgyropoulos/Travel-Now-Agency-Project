@@ -46,6 +46,38 @@ a {
     margin-left: 5px;
 }
 
+/*Sub-Pages Heading*/
+
+.slashes {
+    color: var(--primary-green);
+    display: inline;
+    letter-spacing: -0.1em;
+    margin-left: 150px;
+    padding-right: 0.3em;
+}
+
+.page-heading h1 {
+    color: white;
+    position: absolute;
+    bottom: 0px;
+}
+
+.page-heading {
+    position: relative;
+    background-image:
+    linear-gradient(to bottom, transparent, #000),url(../images/header-photos/events-top.png);    
+    height: 500px;
+    background-size: cover;
+}
+
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 2.5em;
+    }
+}
+
+/* ############################################################ */
+                            /*HOMEPAGE*/
 
 /*Covid*/
 
@@ -111,27 +143,6 @@ nav ul li {
     border-top: 2px solid var(--primary-green);
 }
 
-/*Page Heading*/
-
-
-.slashes {
-    color: var(--primary-green);
-    display: inline;
-}
-
-.page-heading h1 {
-    color: white;
-    position: absolute;
-    bottom: 0px;
-}
-
-.page-heading {
-    position: relative;
-    background-image:
-    linear-gradient(to bottom, transparent, #000),url(../images/header-photos/events-top.png);    
-    height: 500px;
-    background-size: cover;
-}
 
 /*Search*/
 
@@ -390,10 +401,6 @@ footer small {
     padding: 0.5em;
 }
 
-/* Events */
-
-
-
 .team-photo {
     height: 200px;
     width: 200px;
@@ -410,9 +417,7 @@ footer small {
 
 /*MEDIA QUERIES*/
 
-
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     /*Covid*/
 
     /*Top Destinations*/
@@ -481,4 +486,72 @@ footer small {
         padding: 0 10px;
         min-width: 100%;
     }
+}
+
+/* ############################################################ */
+                            /*EVENTS*/
+#events-wrapper {
+    max-width: 1908px;
+    margin: 150px auto;
+}
+
+.events-card h2 {
+    font-size: 2em;
+}
+
+#events-wrapper ul li {
+    margin: 50px 0;
+}
+
+.events-card {
+    height: 300px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.events-card .left-side {
+    width: 30%;
+    height: 100%;
+    display: inline-block;
+    background-color: var(--light-green);
+    text-align: center;
+    border-radius: 10px 0 0 10px;
+}
+
+.events-text {
+    padding: 40px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.events-card .right-side {
+    width: 70%;
+    background: var(--primary-grey) url('../images/events-cards/test.jpg');
+    background-position: center;
+    background-repeat: no-repeat ;
+    background-size: cover ;
+    height: inherit;
+    float: right;
+    border-radius: 0 10px 10px 0;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 800px) {
+    #events-wrapper {
+        margin: 50px auto;
+    }
+
+    .events-card {
+        height: 200px;
+        width: 90%;
+    }
+
+    .left-side h2 {
+        font-size: 1.5em;
+    }
+
+
+
 }

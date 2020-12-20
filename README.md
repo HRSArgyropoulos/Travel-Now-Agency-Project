@@ -96,3 +96,12 @@ Placed TOP DESTINATIONS text. Added the background div and created the destinati
 ### General 
 -Updated/organized images catalogs
 -Update favicon in all pages
+
+## 20.12.20 C1
+-Breakpoint survey txt has been added
+
+## 20.12.20 C2 
+
+### Events 
+-Events page developed
+-Breakpoints updated drom 768px to 800px for tablet
