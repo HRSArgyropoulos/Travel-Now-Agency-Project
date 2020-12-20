@@ -1,0 +1,9 @@
+9.01% Total / Desktop / 1920X1080
+8.8% Total / Laptop / 1366x768
+###### Tablet Breakpoint 800px #######
+49.02% in Tablet / Tablet / 768x1024
+5.6% in Tablet / Tablet / 800x1280
+5.05% in Tablet / Tablet / 601x962
+###### Mobile Breakpoint 480px #######
+13.37% in Mobile / Mobile / 130x640
+8.16% in Mobile / Mobile / 414x896
