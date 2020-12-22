@@ -1,43 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Now Agency - Contact Us</title>
     <link href="assets/logo-svg.svg" type="image/svg" rel="icon" />
-    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <!--Menu-->
-    <img src="images/header-photos/contact-us-top.png" alt="Contact Us photo"/>
-    <h1>\\\ Contact Us</h1>
+    <div id="contact-us-header" class="page-heading contact-us">
+        <h1>
+            <div class="slashes">///</div>Contact Us
+        </h1>
+    </div>
     <!--Form Section-->
-    <h2>You have questions? We are here to help!</h2>
-    <form action="">
-        <label for "first-name">First Name</label> <br>
-        <input type="text" name="first-name" required> <br>
-        <label for "last-name">Last Name</label> <br>
-        <input type="text" name="last-name" required/> <br>
-        <label for "email">Email</label> <br>
-        <input type="text" name="email" required/> <br>
-        <label for "subject"> Subject <br>
-            <select name="subject" required>
-                <option value="" disabled selected>Choose a subject</option>
-                <option value="questions">Questions about a destination</option>
-                <option value="complains-bugs">Complains and website bugs</option>
-                <option value="other">Other reasons</option>
-            </select>
-        </label>
-        <br>
-        <label for "message">Your message</label> <br>    
-        <textarea rows="10" cols="30" placeholder="Type your message here"></textarea> <br>
-        <button type="submit">Send</button>
-    </form>
-    <!--Contact Details-->
-    <h2>Contact Details</h2> 
-    +44 7700 900077 <br>
-    info@travelnow.com <br>
+    <section id="contact">
+        <form action="">
+            <h2>You have questions? We are here to help!</h2>
+            <label for "first-name">First Name</label> <br>
+            <input type="text" name="first-name" required> <br>
+            <label for "last-name">Last Name</label> <br>
+            <input type="text" name="last-name" required /> <br>
+            <label for "email">Email</label> <br>
+            <input type="text" name="email" required /> <br>
+            <label for "subject"> Subject <br>
+                <select name="subject" required>
+                    <option value="" disabled selected>Choose a subject</option>
+                    <option value="questions">Questions about a destination</option>
+                    <option value="complains-bugs">Complains and website bugs</option>
+                    <option value="other">Other reasons</option>
+                </select>
+            </label>
+            <br>
+            <label for "message">Your message</label> <br>
+            <textarea rows="10" cols="100%" placeholder="Type your message here"></textarea> <br>
+            <button type="submit">Send</button>
+        </form>
+        <!--Contact Details-->
+        <div id="contact-details">
+            <h2>Contact Details</h2>
+            +44 7700 900077 <br>
+            info@travelnow.com <br>
+        </div>
+    </section>
     <!--Agency Locations-->
     <!--London,UK Location-->
     <h2>London, UK</h2>
@@ -50,4 +58,5 @@
     <br>
     <br>
 </body>
+
 </html>

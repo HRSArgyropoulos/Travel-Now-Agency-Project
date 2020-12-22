@@ -105,3 +105,11 @@ Placed TOP DESTINATIONS text. Added the background div and created the destinati
 ### Events 
 -Events page developed
 -Breakpoints updated drom 768px to 800px for tablet
+
+## 22.12.20 C1
+
+### Events
+-Fixed css overwrite of the header photo with the rest subpages(added id)
+
+### Contact Us
+-Developed Contact Form and Flex position.
