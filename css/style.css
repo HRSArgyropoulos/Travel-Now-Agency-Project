@@ -101,11 +101,12 @@ a {
 
 #logo img {
     height: 100px;
-    padding-left: 10px;
+    padding: 10px;
 }
 
 hr {
-    border: 3px solid var(--primary-green)
+    border: 3px solid var(--primary-green);
+    background-color: var(--primary-green);
 }
 
 /*Nav*/
@@ -594,7 +595,50 @@ form input,select {
     width: 100%;
     height: 2.5em;
 }
+
 #contact-details {
     text-align: center;
     padding: 50px;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 800px) {
+    #contact {
+        display: block;
+    }
+}
+
+/*LOCATIONS*/
+
+#locations h2{
+    font-size: 1.7em;
+    padding-left: 100px;
+}
+
+.location-card {
+    padding: 50px 0;
+    background-color: var(--primary-grey);
+}
+
+.location-card > ul{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.location-card > ul > li > ul{
+    padding: 100px 25px;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 480px) {
+    .location-card > ul > li > ul{
+        padding: 40px 0;
+    }
+
+    .location-card > ul{
+        text-align: center;
+    }
 }

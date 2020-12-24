@@ -113,3 +113,8 @@ Placed TOP DESTINATIONS text. Added the background div and created the destinati
 
 ### Contact Us
 -Developed Contact Form and Flex position.
+
+## 24.12.20 C1
+
+### Contact Us
+-Developed Locations and responsive.
