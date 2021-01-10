@@ -118,3 +118,8 @@ Placed TOP DESTINATIONS text. Added the background div and created the destinati
 
 ### Contact Us
 -Developed Locations and responsive.
+
+## 10.01.21 C1 
+
+### About
+-Developed About page. Cards developed based on events cards (might need to group these two). Team quotes been developed (can do the second one with margin right to have the inside effect). Awards and certifications developed.

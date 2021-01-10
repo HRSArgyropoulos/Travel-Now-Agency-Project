@@ -5,6 +5,7 @@
     --dark-grey: #515151;
     --primary-green:#00ffb9;
     --light-green: rgb(185,250,248,0.5); /*mint*/
+    --purple: #c7bbff;
 }
 
 * {
@@ -46,6 +47,11 @@ a {
     margin-left: 5px;
 }
 
+.flex-allignment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /*Sub-Pages Heading*/
 
 .slashes {
@@ -377,7 +383,7 @@ nav ul li {
 /* Footer */
 
 footer {
-    background-color: rgba(48, 37, 99, 1);
+    background-color:black;
     color: white;
 }
 
@@ -493,8 +499,110 @@ footer small {
 }
 
 /* ############################################################ */
+                            /*ABOUT*/
+
+#about-header  {
+    background-image: linear-gradient(to bottom, transparent, #000),url('../images/header-photos/about-top.jpg');
+}
+
+.about-card .about-ls {
+    width: 25%;
+    height: 100%;
+    display: inline-block;
+    border-radius: 10px 0 0 10px;
+    background: var(--primary-grey) url('../images/about-cards/about-test.jpg');
+    background-position: center;
+    background-repeat: no-repeat ;
+    background-size: cover ;
+}
+
+.about-card .about-rs {
+    width: 75%;
+    background-color: var(--purple);
+    height: inherit;
+    float: right;
+    border-radius: 0 10px 10px 0;
+} 
+
+.about-rs h1:first-child {
+    color: white;
+    padding-left: 5%;
+}
+
+.about-card .about-rs p {
+    width: 90%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.about-card {
+    position: relative;
+    margin-bottom: 100px !important;
+}
+
+.about-headings {
+    position: absolute;
+    right: 0px;
+    bottom: -50px;
+}
+
+/* Members Quotes*/
+#team-quotes {
+    background-color: var(--primary-grey);
+    margin: 150px 0;
+}
+
+#team-quotes-wrapper {
+    padding: 100px 0;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.member-details img{
+    display: block;
+}
+
+.member-details {
+    text-align: center;
+    margin-right: 100px;
+}
+
+.member-quote {
+    margin: 70px 0;
+}
+
+.member-quote-text {
+    margin-top: 25px;
+}
+
+@media screen and (max-width: 800px) {
+    .flex-allignment {
+        flex-wrap: wrap;
+    }
+
+    .member-details{
+        margin-right: 0;
+    }
+}
+
+/*Awards and Certfcs*/
+#awards{
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+#awards h1 {
+    margin-bottom: 1.5em;
+}
+
+#awards img {
+    height: 100px;
+    padding: 0 50px;
+}
+
+/* ############################################################ */
                             /*EVENTS*/
-#events-wrapper {
+#events-wrapper, #about-wrapper {
     max-width: 1908px;
     margin: 150px auto;
 }
@@ -507,8 +615,8 @@ footer small {
     margin: 50px 0;
 }
 
-.events-card {
-    height: 300px;
+.events-card, .about-card{
+    height: 350px;
     width: 85%;
     margin: 0 auto;
 }
