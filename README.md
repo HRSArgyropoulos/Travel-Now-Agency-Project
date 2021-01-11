@@ -123,3 +123,9 @@ Placed TOP DESTINATIONS text. Added the background div and created the destinati
 
 ### About
 -Developed About page. Cards developed based on events cards (might need to group these two). Team quotes been developed (can do the second one with margin right to have the inside effect). Awards and certifications developed.
+
+## 11.01.21 C1
+
+### Destinations
+
+-Developed Destinations page. Responsive checked for desktop and ipad/tablets. Does NOT work for mobiles yet.

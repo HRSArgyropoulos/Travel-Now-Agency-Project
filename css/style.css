@@ -601,6 +601,81 @@ footer small {
 }
 
 /* ############################################################ */
+                            /*DESTINATIONS*/
+
+#destinations-header {
+    background-image: linear-gradient(to bottom, transparent, #000),url('../images/header-photos/dest-top.jpg');
+}
+
+#destinations {
+    margin: 100px 0;
+}
+
+.dest-card {
+    background-color: var(--primary-grey);
+    height: 550px;
+    margin: 100px 0;
+}
+
+.dest-card-container {
+    height: inherit;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.dest-img-main {
+    height: 110%;
+    position: relative;
+    bottom: 5%;
+    border-radius: 10px;
+    margin-right: 100px;
+    float: left;
+}
+
+.dest-card nav li{
+    padding-right: 2em;
+}
+
+.dest-inner-content {
+    padding-top: 50px;
+}
+
+.dest-sponsor {
+    padding-top: 50px;
+    text-align: center;
+    float: right;
+}
+
+.dest-sponsor img {
+    height: 50px;
+}
+
+#dest-more-info {
+    text-align: center;
+    padding: 60px;
+    background-color: var(--purple);
+}
+
+#dest-more-info h2 {
+    padding-bottom: 1.2em;
+}
+
+@media screen and (max-width: 800px) {
+    .dest-img-main {
+        margin-right: 25px;
+    }
+
+    .dest-card-container {
+        width: 95%;
+     }
+
+     .dest-inner-content nav ul {
+        overflow-x: auto;
+        white-space: nowrap;
+     }
+}
+
+/* ############################################################ */
                             /*EVENTS*/
 #events-wrapper, #about-wrapper {
     max-width: 1908px;
@@ -663,9 +738,6 @@ footer small {
     .left-side h2 {
         font-size: 1.5em;
     }
-
-
-
 }
 
 /* ############################################################ */
