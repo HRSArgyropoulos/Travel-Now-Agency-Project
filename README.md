@@ -129,3 +129,14 @@ Placed TOP DESTINATIONS text. Added the background div and created the destinati
 ### Destinations
 
 -Developed Destinations page. Responsive checked for desktop and ipad/tablets. Does NOT work for mobiles yet.
+
+## 19.01.21 C1
+
+### General
+-Fixed many responsive elements like headings, increased font size, and general neatness of the website.
+
+### Footer
+-Fixed mobile responsiveness and added social icons and other icons.
+
+### Header/Nav
+-Added to all pages

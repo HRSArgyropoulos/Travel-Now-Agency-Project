@@ -16,7 +16,7 @@
 
 body,input,button {
     font-family: 'Saira Condensed', sans-serif;
-    font-size: 13pt;
+    font-size: 14pt;
 }
 
 h1 {
@@ -33,7 +33,7 @@ a {
 
 .headings {
     position: absolute;
-    top: -45px;
+    top: -50px;
     margin-left: 100px;
 }
 
@@ -79,7 +79,7 @@ a {
     background-size: cover;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     h1 {
         font-size: 2.5em;
     }
@@ -144,8 +144,8 @@ nav ul li {
     display: block;
     color: black;
     font-weight: bold;
-    padding: 0 0.5em;
-    margin: 0 0.5em;
+    padding: 0 0.4em;
+    margin: 0 0.3em;
 }
 
 #nav-items a:hover {
@@ -366,7 +366,7 @@ nav ul li {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-    padding: 100px 0;
+    padding: 75px 0;
 }
 
 #customer-reviews ul li {
@@ -377,7 +377,12 @@ nav ul li {
 
 .review-text {
     padding: 20px 50px;
-    font-size: 13pt;
+}
+
+@media only screen and (max-width: 420px) {
+    #dest-cards, #customer-reviews ul, #partners div {
+        padding: 40px 0;        
+    }
 }
 
 /* Footer */
@@ -385,6 +390,7 @@ nav ul li {
 footer {
     background-color:black;
     color: white;
+    
 }
 
 footer a {
@@ -398,6 +404,30 @@ footer > ul {
     padding: 50px 0;
 }
 
+#footer-cols > li:first-child {
+    text-align: center;
+}
+
+.social-icons i {
+    padding: 10px;
+}
+
+.social-icons .fa-facebook:hover {
+    color: #3b5998;
+}
+
+.social-icons .fa-instagram:hover {
+    color: #e1306c;
+}
+
+.social-icons .fa-twitter:hover {
+    color: #1da1f2;
+}
+
+.social-icons .fa-youtube:hover {
+    color: #ff0000;
+}
+
 footer hr {
     width: 85%;
     border: 1px solid var(--primary-green);
@@ -409,6 +439,29 @@ footer small {
     display: flex;
     justify-content: center;
     padding: 0.5em;
+}
+
+footer #tripadvisor {
+    border: 2px solid #00af87;
+    padding: 0.5em 0;
+}
+
+footer #tripadvisor i {
+    color: #00af87;
+}
+
+#footer-cols > li:last-child i{
+    color: var(--primary-green);
+}
+
+@media only screen and (max-width: 420px) {
+    footer ul li{
+        width: 100%;
+    }
+
+    footer ul {
+        padding: 10px;
+    }
 }
 
 .team-photo {
@@ -427,7 +480,7 @@ footer small {
 
 /*MEDIA QUERIES*/
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     /*Covid*/
 
     /*Top Destinations*/
@@ -436,8 +489,7 @@ footer small {
     }
 
     .headings {
-        font-size: 2.5em;
-        margin: 0 auto!important;
+        margin: 0 50px;
         top: -35px;
     }
 
@@ -463,10 +515,10 @@ footer small {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 420px) {
     /*Top Destinations*/
     .card p,.side-text {
-        font-size: 10pt;
+        font-size: 11pt;
     }
 
     #search-core h2 {
@@ -486,10 +538,11 @@ footer small {
     }
 
     .headings {
+        margin: 0;
         text-align: center;
         width: 100%;
-        font-size: 2em;
-        top: -25px;
+        font-size: 1.9em;
+        top: -28px;
     }
 
     #customer-reviews ul li{
@@ -575,7 +628,7 @@ footer small {
     margin-top: 25px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     .flex-allignment {
         flex-wrap: wrap;
     }
@@ -660,7 +713,7 @@ footer small {
     padding-bottom: 1.2em;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     .dest-img-main {
         margin-right: 25px;
     }
@@ -725,7 +778,7 @@ footer small {
 
 /*MEDIA QUERIES*/
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     #events-wrapper {
         margin: 50px auto;
     }
@@ -776,13 +829,17 @@ form input,select {
     height: 2.5em;
 }
 
+form input {
+    padding-left: 10px ;
+}
+
 #contact-details {
     text-align: center;
     padding: 50px;
 }
 
 /*MEDIA QUERIES*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     #contact {
         display: block;
     }
@@ -813,7 +870,7 @@ form input,select {
 }
 
 /*MEDIA QUERIES*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 420px) {
     .location-card > ul > li > ul{
         padding: 40px 0;
     }

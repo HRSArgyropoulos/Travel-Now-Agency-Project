@@ -11,6 +11,22 @@
 </head>
 
 <body>
+    <header>
+        <nav class="grid">
+            <div id="logo"><a href="index.html"><img src="assets/logos-test/test_6.svg" alt="Travel Now Logo" /></a>
+            </div>
+            <div id="nav-items">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact-us.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <hr>
+    </header>
     <!--Header Photo-->
     <div id="contact-us-header" class="page-heading contact-us">
         <h1>
@@ -19,7 +35,7 @@
     </div>
     <!--Form Section-->
     <section id="contact">
-        <form action="">
+        <form id="contact-form" name="contact-form" action="POST">
             <h2>You have questions? We are here to help!</h2>
             <label for "first-name">First Name</label> <br>
             <input type="text" name="first-name" required> <br>
@@ -37,7 +53,7 @@
             </label>
             <br>
             <label for "message">Your message</label> <br>
-            <textarea rows="5" cols="40" placeholder="Type your message here"></textarea> <br>
+            <textarea rows="5" style="width: 100%; resize: none;" placeholder="Type your message here"></textarea> <br>
             <button type="submit">Send</button>
         </form>
         <!--Contact Details-->
@@ -109,7 +125,50 @@
         </div>
         <hr>
     </section>
-
+    <footer>
+        <ul id="footer-cols">
+            <li>
+                <ul>
+                    <li class="logo">
+                        <img src="assets/logos-test/24.12/test1.svg" alt="Travel Now Logo" />
+                    </li>
+                    <li>We take you all around the world.</li>
+                    <li>Icons</li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li><b>Explore</b></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Photo Gallery</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li><a href="destinations.html"><b>Destinations</b></a></li>
+                    <li><a href="#">Paris</a></li>
+                    <li><a href="#">London</a></li>
+                    <li><a href="#">New York</a></li>
+                    <li><a href="#">Amsterdam</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li><b>Get in touch</b></li>
+                    <li>Agency Locations</li>
+                    <li>Contact Form</li>
+                    <li><img src="images/" alt="Telephoto icon" /> +44 7700 900077</li>
+                    <li><img src="images/" alt="Email icon" /> info@travelnow.com</li>
+                </ul>
+            </li>
+        </ul>
+        <div id="copyright">
+            <hr>
+            <small>Developed by HRSArgyropoulos©. All rights reserved.</small>
+        </div>
+    </footer>
 </body>
 
 </html>
