@@ -140,3 +140,11 @@ Placed TOP DESTINATIONS text. Added the background div and created the destinati
 
 ### Header/Nav
 -Added to all pages
+
+## 20.01.21 C1
+
+###  General
+-Added footer to all pages.
+
+### Insta Grid
+-Developed grid for the instagram from the start in a seperate file and implemented it here in this project (with auto-fill minmax)

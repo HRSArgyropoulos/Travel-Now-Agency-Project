@@ -267,72 +267,64 @@ nav ul li {
 
 /* As captured on Instagram */
 
-#insta-grid {
+#insta {
+    background-image: linear-gradient(to bottom, white, var(--purple));
+}
+
+#insta {
+    position: relative;
+    padding: 100px 0 50px 0;
+}
+
+#grid-insta {
+    display: grid;
+    max-width: 1500px;
     width: 90%;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 10px;
-    grid-template-areas: 
-    "main-box1 long-box1 long-box1 short-box1"
-    "short-box2a long-box2 long-box2 short-box2b"
-    "short-box3a long-box3 long-box3 short-box3b";
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    grid-template-rows: 1fr;
 }
 
-#insta-grid div{
-    border-radius: 25px;
-    background-color: var(--primary-green);
-}
-
-#insta-grid img {
+.insta-photo {
+    position: relative;
     width: 100%;
+  }
+  
+  .insta-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+  
+  .insta-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     height: 100%;
-    object-fit: cover;
-    border-radius: 25px;
-}
-
-#main-box1 {
-    grid-area: main-box1;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    border-radius: 15px;
+    background-color: #008CBA;
+  }
+  
+  .insta-photo:hover .insta-overlay {
+    opacity: 0.85;
+  }
+  
+  .insta-text {
+    color: white;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    display: flex;
-    justify-content: center;
-    line-height: 4em;
-    align-items: center;
-    background-color: var(--primary-green);
-    border: 5px solid black;
-}
-
-#long-box1 {
-    grid-area: long-box1;
-}
-
-#short-box1 {
-    grid-area: short-box1;
-}
-
-#short-box2a {
-    grid-area: short-box2a;
-}
-
-#long-box2 {
-    grid-area: long-box2;
-}
-
-#short-box2b {
-    grid-area: short-box2b;
-}
-
-#short-box3a {
-    grid-area: short-box3a;
-}
-
-#long-box3 {
-    grid-area: long-box3;
-}
-
-#short-box3b {
-    grid-area: short-box3b;
-}
+  }
 
 /*Partners*/
 
@@ -400,6 +392,7 @@ footer a {
 footer > ul {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
     padding: 50px 0;
 }
