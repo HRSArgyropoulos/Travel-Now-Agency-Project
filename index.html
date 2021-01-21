@@ -8,247 +8,240 @@
     <link href="assets/logos-test/test_new.svg" type="image/svg" rel="icon" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" />
+    <script src="js/navbar.js" differ></script>
 </head>
 
 <body>
     <div id="container">
-        <!--Covid Section-->
         <header>
-            <div id="covid-msg">
-                <b>COVID 19 information:</b> Travel Now Agency understands the concerns of everyone during these
-                uncertain
-                times, we have worked tirelessly
-                to provide flexible terms to our customers and are delighted to be able to offer a comprehensive range
-                of holidays to help get people on a well-deserved break.
-                For more information please advise the official uk goverment website
-                <a href="https://www.gov.uk/coronavirus" target="_blank">here</a>.
+            <div id="top-section">
+                <div id="navbar">
+                    <nav>
+                        <div id="logo"><a href="index.html"><img src="assets/logos-test/test_6.svg"
+                                    alt="Travel Now Logo" /></a>
+                        </div>
+                        <div id="nav-items">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="destinations.html">Destinations</a></li>
+                                <li><a href="events.html">Events</a></li>
+                                <li><a href="contact-us.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+                <!--Search-->
+                <section id="search">
+                    <div id="search-core">
+                        <h1 style="line-height: 1em">Your time for travel is now!</h1>
+                        <h2>From Alaska to India we've got you covered.</h2>
+                        <form>
+                            <input id="search-input" type="text" placeholder="Search your dream destination">
+                            <button class="green-button" type="submit">Go!</button>
+                        </form>
+                    </div>
             </div>
-            <!--Logo and Nav-->
-            <nav class="grid">
-                <div id="logo"><a href="index.html"><img src="assets/logos-test/test_6.svg" alt="Travel Now Logo" /></a>
+            </section>
+    </div>
+    </header>
+    <!--Top Destinations Section-->
+    <div id="top-dest">
+        <h1 class="headings">TOP DESTINATIONS</h1>
+        <button class="green-button desk-button" href="#">View More</button>
+        <!--Top Destination Card #1-->
+        <div id="dest-cards">
+            <div class="card">
+                <div class="side-text">
+                    <h2>LONDON</h2>
                 </div>
-                <div id="nav-items">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="destinations.html">Destinations</a></li>
-                        <li><a href="events.html">Events</a></li>
-                        <li><a href="contact-us.html">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <hr>
-        </header>
-        <!--Search-->
-        <section id="search">
-            <div id="background-img"></div>
-            <div id="search-overlay">
-                <div id="search-core">
-                    <h1 style="line-height: 1em">Your time for travel is now!</h1>
-                    <h2>From Alaska to India we've got you covered.</h2>
-                    <form>
-                        <input id="search-input" type="text" placeholder="Search your dream destination">
-                        <button class="green-button" type="submit">Go!</button>
-                    </form>
+                <div><img src="images/top-destinations/london-top.jpg" alt="London"></div>
+                <div>
+                    <p>Wonder around the capital of England and see in person the famous London Eye, London bridge,
+                        Big
+                        Ben the Buckingham palace
+                        and
+                        many
+                        more.</p>
                 </div>
             </div>
-        </section>
-        <!--Top Destinations Section-->
-        <div id="top-dest">
-            <h1 class="headings">TOP DESTINATIONS</h1>
-            <button class="green-button desk-button" href="#">View More</button>
-            <!--Top Destination Card #1-->
-            <div id="dest-cards">
-                <div class="card">
-                    <div class="side-text">
-                        <h2>LONDON</h2>
-                    </div>
-                    <div><img src="images/top-destinations/london-top.jpg" alt="London"></div>
-                    <div>
-                        <p>Wonder around the capital of England and see in person the famous London Eye, London bridge,
-                            Big
-                            Ben the Buckingham palace
-                            and
-                            many
-                            more.</p>
+            <!--Top Destination Card #2-->
+            <div class="card">
+                <div class="side-text">
+                    <h2>NEW YORK</h2>
+                </div>
+                <div><img src="images/top-destinations/newyork-top.jpg" alt="New York"></div>
+                <div>
+                    <p>Visit the famous New York city and see up close the Statue of Liberty, have a walk in the
+                        famous
+                        central
+                        Park
+                        and the busy Broadway district.</p>
+                </div>
+            </div>
+            <!--Top Destination Card #3-->
+            <div class="card">
+                <div class="side-text">
+                    <h2>PARIS</h2>
+                </div>
+                <div><img src="images/top-destinations/paris-top.jpg" alt="Paris"></div>
+                <div>
+                    <p>Art, fashion, romance, croissants, the Aifel Tower. An unforgetable expierence for anyone who
+                        chooses to
+                        visit the French capital.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--As Captured on Instagram Section-->
+    <section id="insta">
+        <div id="insta-header">
+            <h1 class="headings">AS CAPTURED ON <i class="fab fa-instagram"></i></h1>
+        </div>
+        <div id="grid-insta">
+            <div class="insta-photo" id="insta1">
+                <img src="images/insta/test.png" alt="test insta">
+                <div class="insta-overlay">
+                    <div class="insta-text">
+                        LONDON<br>
+                        @mick.heiger
                     </div>
                 </div>
-                <!--Top Destination Card #2-->
-                <div class="card">
-                    <div class="side-text">
-                        <h2>NEW YORK</h2>
-                    </div>
-                    <div><img src="images/top-destinations/newyork-top.jpg" alt="New York"></div>
-                    <div>
-                        <p>Visit the famous New York city and see up close the Statue of Liberty, have a walk in the
-                            famous
-                            central
-                            Park
-                            and the busy Broadway district.</p>
+            </div>
+            <div class="insta-photo" id="insta2">
+                <img src="images/insta/test.png" alt="test insta">
+                <div class="insta-overlay">
+                    <div class="insta-text">
+                        LONDON<br>
+                        @mick.heiger
                     </div>
                 </div>
-                <!--Top Destination Card #3-->
-                <div class="card">
-                    <div class="side-text">
-                        <h2>PARIS</h2>
+            </div>
+            <div class="insta-photo" id="insta3">
+                <img src="images/insta/test.png" alt="test insta">
+                <div class="insta-overlay">
+                    <div class="insta-text">
+                        LONDON<br>
+                        @mick.heiger
                     </div>
-                    <div><img src="images/top-destinations/paris-top.jpg" alt="Paris"></div>
-                    <div>
-                        <p>Art, fashion, romance, croissants, the Aifel Tower. An unforgetable expierence for anyone who
-                            chooses to
-                            visit the French capital.</p>
+                </div>
+            </div>
+            <div class="insta-photo" id="insta4">
+                <img src="images/insta/test.png" alt="test insta">
+                <div class="insta-overlay">
+                    <div class="insta-text">
+                        LONDON<br>
+                        @mick.heiger
                     </div>
                 </div>
             </div>
         </div>
-        <!--As Captured on Instagram Section-->
-        <section id="insta">
-            <div id="insta-header">
-                <h1 class="headings">AS CAPTURED ON <i class="fab fa-instagram"></i></h1>
-            </div>
-            <div id="grid-insta">
-                <div class="insta-photo" id="insta1">
-                    <img src="images/insta/test.png" alt="test insta">
-                    <div class="insta-overlay">
-                        <div class="insta-text">
-                            LONDON<br>
-                            @mick.heiger
-                        </div>
-                    </div>
+    </section>
+    <!--Partners-->
+    <section id="partners">
+        <h1 class="headings">OUR PARTNERS</h1>
+        <div>
+            <img src="images/partners/lufthansa.png" alt="Lufthansa Logo" />
+            <img src="images/partners/british-airways.png" alt="British Airways Logo" />
+            <img src="images/partners/emirates.png" alt="Emirates Logo" />
+            <img src="images/partners/delta.png" alt="Delta Logo" />
+            <img src="images/partners/alitalia.png" alt="Alitalia Logo" />
+        </div>
+    </section>
+    <!--Customer Reviews-->
+    <section id="customer-reviews">
+        <h1 class="headings">WHAT OUR CUSTOMERS SAY</h1>
+        <ul>
+            <li>
+                <img style="float: left;" src="assets/quotation-mark-left.svg" alt="Start Quote">
+                <div class="review-text">
+                    <p>One of my best expierences in my life. Would recommend Travel Now to all of my friends.</p>
+                    <br>
+                    <small class="review-by">Harald Thorn, UK</small>
                 </div>
-                <div class="insta-photo" id="insta2">
-                    <img src="images/insta/test.png" alt="test insta">
-                    <div class="insta-overlay">
-                        <div class="insta-text">
-                            LONDON<br>
-                            @mick.heiger
-                        </div>
-                    </div>
+                <img style="float: right;" src="assets/quotation-mark-right.svg" alt="End Quote">
+            </li>
+            <li>
+                <img style="float: left;" src="assets/quotation-mark-left.svg" alt="Start Quote">
+                <div class="review-text">
+                    <p>10/10, organised completely surpassed my expectations. Would use them again!</p>
+                    <br>
+                    <small class="review-by">Elsa Mayers, Germany</small>
                 </div>
-                <div class="insta-photo" id="insta3">
-                    <img src="images/insta/test.png" alt="test insta">
-                    <div class="insta-overlay">
-                        <div class="insta-text">
-                            LONDON<br>
-                            @mick.heiger
-                        </div>
-                    </div>
+                <img style="float: right;" src="assets/quotation-mark-right.svg" alt="End Quote">
+            </li>
+            <li>
+                <img style="float: left;" src="assets/quotation-mark-left.svg" alt="Start Quote">
+                <div class="review-text">
+                    <p>If it wasnt for Travel Now Agencies and their kindness i wouldnt be able to see that many
+                        sights in
+                        Edinburgh.</p>
+                    <br>
+                    <small class="review-by">Harry Jones, UK</small>
                 </div>
-                <div class="insta-photo" id="insta4">
-                    <img src="images/insta/test.png" alt="test insta">
-                    <div class="insta-overlay">
-                        <div class="insta-text">
-                            LONDON<br>
-                            @mick.heiger
+                <img style="float: right;" src="assets/quotation-mark-right.svg" alt="End Quote">
+            </li>
+        </ul>
+    </section>
+    <!--Footer-->
+    <footer id="footer">
+        <ul id="footer-cols">
+            <li>
+                <ul>
+                    <li class="logo">
+                        <img src="assets/logos-test/24.12/test1.svg" alt="Travel Now Logo" />
+                    </li>
+                    <li>We take you all around the world.</li>
+                    <li class="social-icons">
+                        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+                    </li>
+                    <li>
+                        <div id="tripadvisor">
+                            <i class="fab fa-tripadvisor fa-lg"></i>
+                            4.5/5 stars
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--Partners-->
-        <section id="partners">
-            <h1 class="headings">OUR PARTNERS</h1>
-            <div>
-                <img src="images/partners/lufthansa.png" alt="Lufthansa Logo" />
-                <img src="images/partners/british-airways.png" alt="British Airways Logo" />
-                <img src="images/partners/emirates.png" alt="Emirates Logo" />
-                <img src="images/partners/delta.png" alt="Delta Logo" />
-                <img src="images/partners/alitalia.png" alt="Alitalia Logo" />
-            </div>
-        </section>
-        <!--Customer Reviews-->
-        <section id="customer-reviews">
-            <h1 class="headings">WHAT OUR CUSTOMERS SAY</h1>
-            <ul>
-                <li>
-                    <img style="float: left;" src="assets/quotation-mark-left.svg" alt="Start Quote">
-                    <div class="review-text">
-                        <p>One of my best expierences in my life. Would recommend Travel Now to all of my friends.</p>
-                        <br>
-                        <small class="review-by">Harald Thorn, UK</small>
-                    </div>
-                    <img style="float: right;" src="assets/quotation-mark-right.svg" alt="End Quote">
-                </li>
-                <li>
-                    <img style="float: left;" src="assets/quotation-mark-left.svg" alt="Start Quote">
-                    <div class="review-text">
-                        <p>10/10, organised completely surpassed my expectations. Would use them again!</p>
-                        <br>
-                        <small class="review-by">Elsa Mayers, Germany</small>
-                    </div>
-                    <img style="float: right;" src="assets/quotation-mark-right.svg" alt="End Quote">
-                </li>
-                <li>
-                    <img style="float: left;" src="assets/quotation-mark-left.svg" alt="Start Quote">
-                    <div class="review-text">
-                        <p>If it wasnt for Travel Now Agencies and their kindness i wouldnt be able to see that many
-                            sights in
-                            Edinburgh.</p>
-                        <br>
-                        <small class="review-by">Harry Jones, UK</small>
-                    </div>
-                    <img style="float: right;" src="assets/quotation-mark-right.svg" alt="End Quote">
-                </li>
-            </ul>
-        </section>
-        <!--Footer-->
-        <footer>
-            <ul id="footer-cols">
-                <li>
-                    <ul>
-                        <li class="logo">
-                            <img src="assets/logos-test/24.12/test1.svg" alt="Travel Now Logo" />
-                        </li>
-                        <li>We take you all around the world.</li>
-                        <li class="social-icons">
-                            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-                            <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
-                            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-                            <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
-                        </li>
-                        <li>
-                            <div id="tripadvisor">
-                                <i class="fab fa-tripadvisor fa-lg"></i>
-                                4.5/5 stars
-                            </div>
-                            
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <li><b>Explore</b></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="about.html#team-quotes">Team</a></li>
-                        <li><a href="#">Photo Gallery</a></li>
-                        <li><a href="events.html">Events</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <li><a href="destinations.html"><b>Destinations</b></a></li>
-                        <li><a href="#">Paris</a></li>
-                        <li><a href="destinations.html#london-dest">London</a></li>
-                        <li><a href="#">New York</a></li>
-                        <li><a href="#">Amsterdam</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <li><b>Get in touch</b></li>
-                        <li><a href="contact-us.html#locations">Agency Locations</a></li>
-                        <li><a href="contact-us.html#contact-form">Contact Form</a></li>
-                        <li><i class="fas fa-phone-alt"></i> +44 7700 900077</li>
-                        <li><i class="fas fa-envelope"></i> info@travelnow.com</li>
-                    </ul>
-                </li>
-            </ul>
-            <div id="copyright">
-                <hr>
-                <small>Developed by HRSArgyropoulos©. All rights reserved.</small>
-            </div>
-        </footer>
+
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li><b>Explore</b></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="about.html#team-quotes">Team</a></li>
+                    <li><a href="#">Photo Gallery</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li><a href="destinations.html"><b>Destinations</b></a></li>
+                    <li><a href="#">Paris</a></li>
+                    <li><a href="destinations.html#london-dest">London</a></li>
+                    <li><a href="#">New York</a></li>
+                    <li><a href="#">Amsterdam</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li><b>Get in touch</b></li>
+                    <li><a href="contact-us.html#locations">Agency Locations</a></li>
+                    <li><a href="contact-us.html#contact-form">Contact Form</a></li>
+                    <li><i class="fas fa-phone-alt"></i> +44 7700 900077</li>
+                    <li><i class="fas fa-envelope"></i> info@travelnow.com</li>
+                </ul>
+            </li>
+        </ul>
+        <div id="copyright">
+            <hr>
+            <small>Developed by HRSArgyropoulos©. All rights reserved.</small>
+        </div>
+    </footer>
     </div>
 </body>
 
