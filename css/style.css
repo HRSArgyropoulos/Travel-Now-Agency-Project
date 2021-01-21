@@ -119,6 +119,10 @@ nav ul{
     overflow: hidden;
 }
 
+#navbar {
+    padding-top: 15px;
+}
+
 #nav-items {
     align-self: center;
 }
@@ -153,6 +157,49 @@ nav ul li {
         width: 100%;
         z-index: 50;
         background-color: black;
+    }
+
+    #navbar {
+        padding-top: 0;
+    }
+}
+
+/*Burger Menu*/
+.fa-bars, .fa-times {
+    color: white;
+}
+
+nav .openMenu, nav .closeMenu{
+    font-size: 2rem;
+    margin:20px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    nav #nav-items {
+        height:100vh;
+        position: fixed;
+        top:0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        background: #000000;
+        display: none;
+        transition: top 1s ease;
+    }
+
+    nav #nav-items .closeMenu {
+        display: block;
+        position: absolute;
+        top:0;
+        right:0;
+    }
+
+    nav .openMenu {
+        display: block;
     }
 }
 

@@ -150,9 +150,17 @@ Placed TOP DESTINATIONS text. Added the background div and created the destinati
 -Developed grid for the instagram from the start in a seperate file and implemented it here in this project (with auto-fill minmax)
 
 ## 21.01.21
+
 -Stop naming commits by the date.
+
 ### Header/Nav/Search
-(Commit: Sticky-Navbar/Search-Background updated)
+=> Commit: Sticky-Navbar/Search-Background updated
 -Major changes in search/header section. Removed overlay and moved to the left.
 -Nav has been redifined and used flex space between with max-width.
 -Navbar on tablets and mobiles is sticky fixed at the top from destinations to footer.
+
+### Git Folder/Nav
+=> Commit: Organize-Git-Folder/Burger-Menu
+-Organize the git directory project plan and 1st assignment zip moved to submissions folder.
+-Added burger menu to index.
+(other pages still need to implement the changes in nav)
