@@ -164,3 +164,13 @@ Placed TOP DESTINATIONS text. Added the background div and created the destinati
 -Organize the git directory project plan and 1st assignment zip moved to submissions folder.
 -Added burger menu to index.
 (other pages still need to implement the changes in nav)
+
+## 23.01.21
+
+### About
+=> Commit: About-Responsiveness
+-About cards responsiveness has been fixed as well as the awards and certifications responsiveness.
+
+### NavBar / BurgerMenu
+=> Commit: AllPages-NavBar/Burgermenu
+-The burger menu has been customized to have the exact oposite colors from the homepage and is functional for all pages. (need to find a way for the fixed stick navbar to work for all the pages and not by getting the top-dest offsetY from the homepage).
