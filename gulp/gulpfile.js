@@ -13,7 +13,7 @@ gulp.task('compress-imgs' , () => {
   return gulp.src('../images/*/*')
   .pipe(imagemin({
     progressive: true,
-    optimizationLevel: 3
+    optimizationLevel: 4
   }))
   .pipe(gulp.dest('../afterimages'));
 })

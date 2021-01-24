@@ -178,5 +178,8 @@ Placed TOP DESTINATIONS text. Added the background div and created the destinati
 ## 24.01.21
 
 ### Newsletter
-=> Commit: Newsletter added
+=> Commit: Newsletter-Added
 -Newsletter element has been added (inside the footer).
+=> Commit: Gulp-Imagemin
+=> Commit: Newsletter-Shadow/Logo
+-Newsletter shadow added and white dot removed from logo.

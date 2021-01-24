@@ -418,7 +418,7 @@ nav .openMenu, nav .closeMenu{
 }
 
 #customer-reviews ul li {
-    font-size: 1.2em;
+    font-size: 1.1em;
     flex: 1;
     padding: 0 3em;
 }
@@ -446,7 +446,6 @@ footer a {
 }
 
 #newsletter {
-    /* float: right; */
     display: block;
     width: 450px;
     background-color: var(--primary-green);
@@ -455,6 +454,7 @@ footer a {
     top: -75px;
     right: 75px;
     padding: 25px 50px;
+    box-shadow: 10px 10px 50px #000;
 }
 
 #newsletter input {
