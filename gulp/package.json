@@ -1,0 +1,22 @@
+{
+  "name": "travel-now-project",
+  "version": "1.0.0",
+  "description": "Travel Now Project - static website for Front End Development (SAE Athens)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HRSArgyropoulos/Travel-Now-Project.git"
+  },
+  "author": "HRSArgyropoulos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HRSArgyropoulos/Travel-Now-Project/issues"
+  },
+  "homepage": "https://github.com/HRSArgyropoulos/Travel-Now-Project#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
