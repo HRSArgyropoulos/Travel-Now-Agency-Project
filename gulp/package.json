@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/HRSArgyropoulos/Travel-Now-Project#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0"
   }
 }
