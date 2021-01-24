@@ -8,24 +8,28 @@
     <link href="assets/logo-svg.svg" type="image/svg" rel="icon" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" />
+    <script src="js/navbar.js" defer></script>
+    <script src="js/burger.js" defer></script>
 </head>
 
 <body>
-    <!--Header Photo-->
-    <header>
-        <nav class="grid">
-            <div id="logo"><a href="index.html"><img src="assets/logos-test/test_6.svg" alt="Travel Now Logo" /></a>
-            </div>
-            <div id="nav-items">
-                <ul>
+    <header class="sub-pages-header">
+        <div id="navbar">
+            <nav>
+                <div id="logo"><a href="index.html"><img src="assets/logos-test/test_6.svg" alt="Travel Now Logo" /></a>
+                </div>
+                <div class="openMenu"><i class="fa fa-bars"></i></div>
+                <ul id="nav-items">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="destinations.html">Destinations</a></li>
                     <li><a href="events.html">Events</a></li>
                     <li><a href="contact-us.html">Contact</a></li>
+                    <div class="closeMenu"><i class="fa fa-times"></i></div>
                 </ul>
-            </div>
-        </nav>
+            </nav>
+        </div>
         <hr>
     </header>
     <div id="destinations-header" class="page-heading">
