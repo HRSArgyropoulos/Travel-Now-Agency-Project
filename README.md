@@ -174,3 +174,9 @@ Placed TOP DESTINATIONS text. Added the background div and created the destinati
 ### NavBar / BurgerMenu
 => Commit: AllPages-NavBar/Burgermenu
 -The burger menu has been customized to have the exact oposite colors from the homepage and is functional for all pages. (need to find a way for the fixed stick navbar to work for all the pages and not by getting the top-dest offsetY from the homepage).
+
+## 24.01.21
+
+### Newsletter
+=> Commit: Newsletter added
+-Newsletter element has been added (inside the footer).
