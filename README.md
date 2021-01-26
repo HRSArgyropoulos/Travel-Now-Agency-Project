@@ -183,3 +183,9 @@ Placed TOP DESTINATIONS text. Added the background div and created the destinati
 => Commit: Gulp-Imagemin
 => Commit: Newsletter-Shadow/Logo
 -Newsletter shadow added and white dot removed from logo.
+
+## 26.01.21
+
+### NavBar
+=> Commit: fixed-navbar-for-all-sub-pages
+-Fixed for subpages and working properly for all pages.
