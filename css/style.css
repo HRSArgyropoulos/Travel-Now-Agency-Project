@@ -65,6 +65,7 @@ a {
     color: white;
     position: absolute;
     bottom: 0px;
+    margin-left: 5%;
 }
 
 .page-heading {
@@ -646,10 +647,6 @@ footer #tripadvisor i {
 
 .sub-pages-header #navbar {
     padding-top: 0;
-}
-
-#about-header h1 {
-    margin-left: 5%;
 }
 
 .about-card{

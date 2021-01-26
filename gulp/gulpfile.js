@@ -29,7 +29,7 @@ gulp.task("zip", () => {
     .src([
       "../*.html",
       "../assets/*",
-      "../css/*",
+      "../css/*.css",
       "../images/*/*",
       "../js/*"],
       {base: "../"})
