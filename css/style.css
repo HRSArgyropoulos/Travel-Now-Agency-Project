@@ -951,8 +951,22 @@ footer #tripadvisor i {
         margin: 50px auto;
     }
 
+    .events-card > div {
+        width: 100%!important;
+    }
+
+    .events-card .left-side {
+        height: 35%;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .events-card .right-side {
+        height: 65%;
+        border-radius: 0 0 10px 10px;
+    }
+
     .events-card {
-        height: 200px;
+        height: 400px;
         width: 90%;
     }
 
