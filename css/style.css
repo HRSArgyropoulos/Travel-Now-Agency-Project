@@ -1006,13 +1006,25 @@ form label {
     color: var(--dark-grey);
 }
 
-form input,select {
+form input, form textarea, form select {
     width: 100%;
+    padding-left: 5px ;
+    margin-bottom: 10px;
     height: 2.5em;
 }
 
-form input {
-    padding-left: 10px ;
+form textarea, form select {
+    font-size: inherit;
+    font-family: inherit;
+}
+
+form textarea {
+    height: 10em;
+}
+
+#contact button {
+    width: 100%;
+    margin: 0 auto;
 }
 
 #contact-details {
@@ -1044,14 +1056,39 @@ form input {
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
 }
 
-.location-card > ul > li > ul{
-    padding: 100px 25px;
+.location-card > ul > li{
+    padding: 0 35px;
+    margin: 30px 0;
 }
 
+.location-card i {
+    color: #008CBA;
+}
+
+.location-card ul > li {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.location-card ul iframe {
+    width: 90vw;
+    height: 400px;
+    margin: 0 auto;
+}
+
+
 /*MEDIA QUERIES*/
+@media screen and (max-width:768px) {
+    .location-card ul iframe {
+        width: 400px;
+    }
+}
+
 @media screen and (max-width: 420px) {
     .location-card > ul > li > ul{
         padding: 40px 0;
@@ -1059,5 +1096,9 @@ form input {
 
     .location-card > ul{
         text-align: center;
+    }
+
+    .location-card ul iframe {
+        width: 300px;
     }
 }
