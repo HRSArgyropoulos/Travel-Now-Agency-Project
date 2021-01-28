@@ -900,7 +900,7 @@ footer #tripadvisor i {
                             /*EVENTS*/
 #events-wrapper, #about-wrapper {
     max-width: 1908px;
-    margin: 150px auto;
+    margin: 100px auto;
 }
 
 .events-card h2 {
@@ -935,7 +935,6 @@ footer #tripadvisor i {
 
 .events-card .right-side {
     width: 70%;
-    background: var(--primary-grey) url('../images/events-cards/test.jpg');
     background-position: center;
     background-repeat: no-repeat ;
     background-size: cover ;
@@ -943,6 +942,23 @@ footer #tripadvisor i {
     float: right;
     border-radius: 0 10px 10px 0;
 }
+
+#halloween .right-side {
+    background-image: url("../images/events-cards/halloween.jpg");
+}
+
+#oktoberfest .right-side {
+    background-image: url("../images/events-cards/oktoberfest.jpg");
+}
+
+#christmas .right-side {
+    background-image: url("../images/events-cards/christmas.jpg");
+}
+
+#lunar .right-side {
+    background-image: url("../images/events-cards/lunar.jpg");
+}
+
 
 /*MEDIA QUERIES*/
 
@@ -972,6 +988,10 @@ footer #tripadvisor i {
 
     .left-side h2 {
         font-size: 1.5em;
+    }
+
+    #events-wrapper ul li {
+        margin: 15px 0;
     }
 }
 
