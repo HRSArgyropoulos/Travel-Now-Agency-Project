@@ -75,11 +75,16 @@ a {
     background-position: center;
     background-repeat: no-repeat ;
     background-size: cover ;
-    height: 500px;
+    height: 50vh;
+    min-height: 300px;
     background-size: cover;
 }
 
 @media screen and (max-width: 768px) {
+    .page-heading {
+        height: 30vh;
+    }
+
     h1 {
         font-size: 2.5em;
     }
@@ -87,7 +92,7 @@ a {
 
 @media screen and (max-width: 420px) {
     h1 {
-        font-size: 1.9em;
+        font-size: 1.6em;
     }
 }
 
@@ -702,7 +707,7 @@ footer #tripadvisor i {
 
 .about-card {
     position: relative;
-    margin-bottom: 100px !important;
+    margin-bottom: 100px;
 }
 
 .about-headings {
@@ -739,6 +744,10 @@ footer #tripadvisor i {
     .overflow {
         display: none;
     }
+
+    #about-wrapper > div {
+        margin: 50px auto;
+    }
 }
 
 @media screen and (max-width: 420px) {
@@ -754,7 +763,7 @@ footer #tripadvisor i {
 }
 
 #team-quotes-wrapper {
-    padding: 100px 0;
+    padding: 50px 0;
     width: 85%;
     margin: 0 auto;
 }
@@ -790,7 +799,7 @@ footer #tripadvisor i {
 #awards{
     width: 90%;
     margin: 0 auto;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
