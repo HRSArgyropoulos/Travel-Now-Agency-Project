@@ -161,14 +161,21 @@ nav ul li {
     color: white;
 }
 
-@media only screen and (max-width: 768px) {
     .sticky-nav {
         position: fixed;
         top: 0;
         width: 100%;
         z-index: 50;
-        background-color: black;
+        background-color: rgba(0, 0, 0, 0.8);
+        backdrop-filter: saturate(180%) blur(20px);
         height: 60px;
+    }
+
+    @media screen and (max-width:768px) {
+        .sticky-nav, .sticky-nav #nav-items {
+            background-color: rgba(0, 0, 0, 0.95);
+            backdrop-filter: none;
+        }
     }
 
     .sticky-nav #logo img {
@@ -180,13 +187,13 @@ nav ul li {
     }
 
     .sticky-nav-subpage {
-        background-color: white;
+        background: rgba(255,255,255, 0.75);
     }
 
     #navbar {
         padding-top: 0;
     }
-}
+
 
 /*Burger Menu*/
 .fa-bars, .fa-times {
@@ -659,9 +666,16 @@ footer #tripadvisor i {
     color: black;
 }
 
-.sub-pages-header #nav-items {
-    background: #fff;
+@media screen and (max-width:768px) {
+    .sticky-nav-subpage {
+        background: rgba(255,255,255, 0.95);
+    }
+
+    .sub-pages-header #nav-items {
+        background: rgba(255, 255, 255, 0.95);
+    }
 }
+
 
 .sub-pages-header #navbar {
     padding-top: 0;
@@ -1100,14 +1114,14 @@ form textarea {
 
 .location-card ul > li {
     display: flex;
-    align-items: center;
-    padding: 0 10px;
+    padding: 0 20px;
 }
 
 .location-card ul iframe {
     width: 90vw;
     height: 400px;
     margin: 0 auto;
+    /* border: 1px solid black; */
 }
 
 
