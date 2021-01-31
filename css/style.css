@@ -1084,22 +1084,31 @@ form textarea {
 
 /*LOCATIONS*/
 
-#locations h2{
-    font-size: 1.7em;
-    padding-left: 100px;
-}
-
-.location-card {
-    padding: 50px 0;
+#locations {
     background-color: var(--primary-grey);
 }
 
-.location-card > ul{
-    width: 85%;
+#locations .slashes {
+    font-size: 1.7em;
+    float: left;
+}
+
+#locations h2{
+    font-size: 1.7em;
+}
+
+.location-card {
+    width: 90%;
+    padding: 50px 0;
     margin: 0 auto;
+}
+
+.location-card > ul{
+    width: 95%;
+    margin: 50px auto;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -1112,36 +1121,27 @@ form textarea {
     color: #008CBA;
 }
 
+.location-card .fa-map-marker-alt{
+    padding: 0 5px; /*icons different width*/
+}
+
 .location-card ul > li {
     display: flex;
     padding: 0 20px;
+    flex-wrap: nowrap;
 }
 
-.location-card ul iframe {
-    width: 90vw;
+.location-card iframe {
+    width: 100%;
     height: 400px;
     margin: 0 auto;
-    /* border: 1px solid black; */
 }
 
 
 /*MEDIA QUERIES*/
-@media screen and (max-width:768px) {
-    .location-card ul iframe {
-        width: 400px;
-    }
-}
 
 @media screen and (max-width: 420px) {
-    .location-card > ul > li > ul{
-        padding: 40px 0;
-    }
-
-    .location-card > ul{
-        text-align: center;
-    }
-
-    .location-card ul iframe {
-        width: 300px;
+    .location-card ul > li {
+        width: 100%;
     }
 }
