@@ -1,7 +1,7 @@
 /*General*/
 
 :root {
-    --primary-grey:rgb(239, 239, 239);
+    --primary-grey:rgb(239, 239, 239,1);
     --dark-grey: #515151;
     --primary-green:#00ffb9;
     --light-green: rgb(185,250,248,0.5); /*mint*/
@@ -293,7 +293,7 @@ nav .openMenu, nav .closeMenu{
 /* Top Destinations */
 
 #top-dest {
-    background-color: var(--primary-grey);
+    /* background-color: var(--primary-grey); */
     width: 100%;
     margin: 100px 0;
     position: relative;
@@ -310,6 +310,7 @@ nav .openMenu, nav .closeMenu{
     justify-content: center;
     flex-wrap: wrap;
     padding: 60px 0;
+    z-index: 2;
 }
 
 .card {
@@ -319,7 +320,7 @@ nav .openMenu, nav .closeMenu{
 }
 
 .card p{
-    background-color: white;
+    background-color: var(--primary-grey);
     width: 90%;
     float: right;
     border-radius: 0 0 10px 0;
@@ -356,6 +357,38 @@ nav .openMenu, nav .closeMenu{
 #insta {
     position: relative;
     padding: 100px 0 50px 0;
+}
+
+#insta-header .headings{
+    z-index: 2;
+}
+
+#clouds {
+    position: absolute;
+    top: -280px;
+    right: 0;
+    z-index: 0;
+    opacity: 0.2;
+}
+
+#clouds > svg {
+    width: 350px;
+}
+
+@media screen and (max-width:768px) {
+    #clouds {
+        top: -250px;
+    }
+}
+
+@media screen and (max-width:420px) {
+    #clouds > svg {
+        width: 250px;
+    }
+
+    #clouds {
+        top: -180px;
+    }
 }
 
 #grid-insta {
