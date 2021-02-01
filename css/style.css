@@ -153,8 +153,7 @@ nav ul li {
 }
 
 #nav-items a:hover {
-    border-bottom: 2px solid var(--primary-green);
-    border-top: 2px solid var(--primary-green);
+    border-bottom: 3px solid var(--primary-green);
 }
 
 #top-section a{
