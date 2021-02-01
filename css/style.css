@@ -806,12 +806,13 @@ footer #tripadvisor i {
 
 /* Members Quotes*/
 #team-quotes {
-    background-color: var(--primary-grey);
+    /* background-color: var(--primary-grey); */
+    background: linear-gradient(var(--light-green), #fff);
     margin: 150px 0;
 }
 
 #team-quotes-wrapper {
-    padding: 50px 0;
+    padding: 20px 0;
     width: 85%;
     margin: 0 auto;
 }
