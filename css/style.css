@@ -807,7 +807,7 @@ footer #tripadvisor i {
 #team-quotes {
     /* background-color: var(--primary-grey); */
     background: linear-gradient(var(--light-green), #fff);
-    margin: 150px 0;
+    margin-bottom: 150px;
 }
 
 #team-quotes-wrapper {
