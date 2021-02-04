@@ -7,10 +7,12 @@ window.onload = function () {
   //console.log(icon);
 
   let start;
+  const header = document.getElementsByTagName("header")[0];
   if (document.querySelector("#homepage") !== null) {
-    start = document.getElementsByTagName("header")[0];
+    start = header;
   } else {
     start = document.getElementsByClassName("page-heading")[0];
+    header.style.height = 100 + "px";
     nav.classList.add("sticky-nav-subpage");
   }
   start = start.offsetTop + start.offsetHeight;
