@@ -12,7 +12,7 @@ window.onload = function () {
     start = header;
   } else {
     start = document.getElementsByClassName("page-heading")[0];
-    header.style.height = 100 + "px";
+    header.style.height = `${header.offsetHeight}px`;
     nav.classList.add("sticky-nav-subpage");
   }
   start = start.offsetTop + start.offsetHeight;

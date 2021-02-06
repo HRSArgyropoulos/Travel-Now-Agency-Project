@@ -549,6 +549,11 @@ footer > ul {
     padding: 100px 0;
 }
 
+.footer-heading {
+    font-size: 1.3em;
+    padding-bottom: 0.5rem;
+}
+
 #footer-cols > li:first-child {
     text-align: center;
 }
@@ -604,8 +609,12 @@ footer #tripadvisor i {
         width: 100%;
     }
 
+    .logo img {
+        width: 50%;
+    }
+
     footer ul {
-        padding: 10px;
+        padding: 15px;
     }
 
     footer {
