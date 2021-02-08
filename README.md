@@ -189,3 +189,35 @@ Placed TOP DESTINATIONS text. Added the background div and created the destinati
 ### NavBar
 => Commit: fixed-navbar-for-all-sub-pages
 -Fixed for subpages and working properly for all pages.
+
+## 27.01.21
+-Made the navbar smaller in height and adjusted the js accordingly for the smaller icons in navbar. (mobile-tablet).
+-Fixed about cards responsiveness for tablet and mobile.
+-Contact agency locations added icons and embed map from Google Maps.
+-Contact form button bigger and textarea modifications.
+
+## 28.01.21
+-Added different images for each card in about page.
+-Fixed margins in quote section.
+
+## 31.01.21
+-Minor change in location map and location card layout.
+-Add backdrop filter in navbar.
+-Formatted code of navbar.js.
+-Found a closing bracket that has been missing without effect.
+-Added a clouds on insta section in the background.
+
+## 01.02.21
+-Added box shadow in navbar to have a "distance" on top effect from the page.
+-Added mint gradient in the background of team quotes. 
+-Navbar hover border top removed.
+
+## 02.02.21
+-Add svg in the background top team members quotes.
+
+## 04.02.21
+-Destinations page ideas. (stash)
+-Fixed issue in navbar where there was a jump when sticky nav was added to the top of screen.
+
+## 06.02.21-08.02.21
+-Minor changes in spacing (footer,top-destinations)
