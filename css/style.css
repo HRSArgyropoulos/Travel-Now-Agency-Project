@@ -301,8 +301,9 @@ nav .openMenu, nav .closeMenu{
 
 #top-dest button {
     position: absolute;
-    right: 50px;
-    top: 20px;
+    right: 200px;
+    bottom: 10px;
+    z-index: 10;
 }
 
 #dest-cards {
@@ -640,11 +641,10 @@ footer #tripadvisor i {
 
 @media screen and (max-width: 768px) {
     /*Covid*/
-
-    /*Top Destinations*/
     .desk-button {
         display: none;
     }
+    /*Top Destinations*/
 
     .headings {
         margin: 0 50px;
