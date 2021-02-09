@@ -908,6 +908,11 @@ footer #tripadvisor i {
     background-repeat: no-repeat;
 }
 
+#LONDON {
+    background-image: url(../images/destinations/ldn.jpg);
+    background-position: bottom;
+}
+
 .dest-content {
     width: 75%;
     min-height: 600px;

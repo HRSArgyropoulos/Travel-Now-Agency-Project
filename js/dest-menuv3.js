@@ -1,7 +1,12 @@
 "use strict";
 
-const menu = document.querySelectorAll('.dest-card nav li');
-const content = document.querySelectorAll('.display-dest-content li');
+const destCards = document.getElementsByClassName("dest-card");
+//console.log(destCards);
+for (const destination of destCards) {
+//console.log(destination);
+const menu = destination.querySelectorAll('.dest-card nav li');
+
+const content = destination.querySelectorAll('.display-dest-content li');
 
 const hideall = () => {
     for (const el of content) { //Hide all content divs
@@ -30,4 +35,5 @@ for (const el of menu) {
       content[index].classList.replace("hide", "show");
       el.classList.add("active");
     });
+}
 }
