@@ -899,82 +899,67 @@ footer #tripadvisor i {
 }
 
 .dest-card {
-    height: 550px;
     margin: 100px 0;
     display: flex;
     position: relative;
-    /* background-color: rgb(0, 0, 0); */
     background-image: url(../images/destinations/ams.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.dest-img {
-    width: 25%;
-    background: url(../images/destinations/london.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: inherit;
-}
-
 .dest-content {
-    width: 50%;
-    height: 80%;
+    width: 75%;
+    min-height: 600px;
     margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.3);
-    backdrop-filter: saturate(180%) blur(30px);
+    backdrop-filter: blur(10px);
     padding: 2em;
-    
 }
-
-
 
 .dest-content {
     color: white;
+    background-color: rgb(54, 54, 54, 0.7);
+    box-shadow: inset 0 3px 10px 0 rgb(0 0 0 / 50%)
 }
 
 .dest-content h2 {
     font-size: 3em;
 }
 
-
-
-/* .dest-card-container {
-    height: inherit;
-    width: 85%;
-    margin: 0 auto;
+.dest-content > nav li {
+    padding: 0 1rem;
+    cursor: pointer;
 }
 
-.dest-img-main {
-    height: 110%;
-    position: relative;
-    bottom: 5%;
-    border-radius: 10px;
-    margin-right: 100px;
-    float: left;
+.dest-content nav {
+    margin-bottom: 2rem;
+    overflow: auto;
+    white-space: nowrap;
 }
 
-.dest-card nav li{
-    padding-right: 2em;
+.active{
+    border-bottom: 3px solid rgb(255, 103, 86);
 }
 
-.dest-inner-content {
-    padding-top: 50px;
+.hide {
+    display: none;
 }
 
-.dest-sponsor {
-    padding-top: 50px;
-    text-align: center;
-    float: right;
+.show {
+    display: block;
 }
 
-.dest-sponsor img {
-    height: 50px;
+@media screen and (max-width: 600px) {
+    .dest-content {
+        width: 90%;
+    }
+
+    .dest-content {
+        font-size: 1rem;
+    }
 }
 
-#dest-more-info {
+/* #dest-more-info {
     text-align: center;
     padding: 60px;
     background-color: var(--purple);
@@ -982,21 +967,6 @@ footer #tripadvisor i {
 
 #dest-more-info h2 {
     padding-bottom: 1.2em;
-}
-
-@media screen and (max-width: 768px) {
-    .dest-img-main {
-        margin-right: 25px;
-    }
-
-    .dest-card-container {
-        width: 95%;
-     }
-
-     .dest-inner-content nav ul {
-        overflow-x: auto;
-        white-space: nowrap;
-     }
 } */
 
 /* ############################################################ */

@@ -221,3 +221,7 @@ Placed TOP DESTINATIONS text. Added the background div and created the destinati
 
 ## 06.02.21-08.02.21
 -Minor changes in spacing (footer,top-destinations)
+
+## 09.02.21
+-Redesigning destinations once again with in page menu reusing the js code from another of my project (with some modifications).
+Deadline for Destinations page completion 12.02.21.
