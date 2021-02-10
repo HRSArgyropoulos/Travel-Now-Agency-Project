@@ -6,7 +6,7 @@ for (const destination of destCards) {
 //console.log(destination);
 const menu = destination.querySelectorAll('.dest-card nav li');
 
-const content = destination.querySelectorAll('.display-dest-content li');
+const content = destination.querySelectorAll('.display-dest-content > li');
 
 const hideall = () => {
     for (const el of content) { //Hide all content divs

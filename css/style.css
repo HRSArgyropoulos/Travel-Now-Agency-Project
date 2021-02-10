@@ -895,17 +895,25 @@ footer #tripadvisor i {
 }
 
 #destinations {
-    margin: 100px 0;
+    background: linear-gradient(var(--purple),white);
 }
 
 .dest-card {
-    margin: 100px 0;
+    padding: 60px 0;
     display: flex;
     position: relative;
     background-image: url(../images/destinations/ams.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.dot {
+    color: var(--primary-green);
+}
+
+.dest-price ul{
+    list-style-type: "- ";
 }
 
 #LONDON {
@@ -919,27 +927,35 @@ footer #tripadvisor i {
     margin: 0 auto;
     backdrop-filter: blur(10px);
     padding: 2em;
+    border-radius: 25px;
 }
 
 .dest-content {
     color: white;
-    background-color: rgb(54, 54, 54, 0.7);
-    box-shadow: inset 0 3px 10px 0 rgb(0 0 0 / 50%)
+    background-color: rgb(54, 54, 54, 0.65);
+    box-shadow: 0 3px 10px 0 rgb(0 0 0 / 50%)
 }
 
 .dest-content h2 {
-    font-size: 3em;
+    font-size: 3.5em;
 }
 
 .dest-content > nav li {
-    padding: 0 1rem;
+    padding: 0 0.8rem;
     cursor: pointer;
 }
 
 .dest-content nav {
     margin-bottom: 2rem;
+    
+}
+.dest-content nav ul {
     overflow: auto;
     white-space: nowrap;
+}
+
+.dest-content nav ul::-webkit-scrollbar {
+    display: none;
 }
 
 .active{
@@ -963,16 +979,6 @@ footer #tripadvisor i {
         font-size: 1rem;
     }
 }
-
-/* #dest-more-info {
-    text-align: center;
-    padding: 60px;
-    background-color: var(--purple);
-}
-
-#dest-more-info h2 {
-    padding-bottom: 1.2em;
-} */
 
 /* ############################################################ */
                             /*EVENTS*/
