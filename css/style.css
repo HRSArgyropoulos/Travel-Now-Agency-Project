@@ -701,7 +701,7 @@ footer #tripadvisor i {
                             /*ABOUT*/
 
 #about-header  {
-    background-image: linear-gradient(to bottom, transparent, #000),url('../images/header-photos/about-top.jpg');
+    background-image: linear-gradient(to bottom, transparent, #000), url('../images/header-photos/about-header.webp');
 }
 
 .sub-pages-header .fa-bars, .sub-pages-header .fa-times {
@@ -734,9 +734,20 @@ footer #tripadvisor i {
     height: 100%;
     display: inline-block;
     border-radius: 10px 0 0 10px;
-    background: var(--primary-grey) url('../images/about-cards/about-test.jpg');
-    background-position: center;
-    background-repeat: no-repeat ;
+}
+
+#about-started .about-ls {
+    background: url('../images/about-cards/started.webp') center no-repeat;
+    background-size: cover ;
+}
+
+#about-passion .about-ls {
+    background: url('../images/about-cards/passion.webp') center no-repeat;
+    background-size: cover ;
+}
+
+#about-grow .about-ls {
+    background: url('../images/about-cards/bigger.webp') center no-repeat;
     background-size: cover ;
 }
 
