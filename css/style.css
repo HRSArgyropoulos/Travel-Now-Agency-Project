@@ -237,7 +237,7 @@ nav .openMenu, nav .closeMenu{
 /*Search*/
 
 #top-section{
-    background: var(--primary-grey) url('../images/test/test2.jpg');
+    background: var(--primary-grey) url('../images/test/test2.webp');
     background-position: center;
     background-repeat: no-repeat ;
     background-size: cover ;
