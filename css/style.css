@@ -1097,7 +1097,7 @@ footer #tripadvisor i {
 /* ############################################################ */
                             /*CONTACT US*/
 #contact-us-header  {
-    background-image: linear-gradient(to bottom, transparent, #000),url('../images/header-photos/contact-us-top.png');
+    background-image: linear-gradient(to bottom, transparent, #000),url('../images/header-photos/contact-us-header.webp');
 }
 
 #contact {
