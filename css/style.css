@@ -998,6 +998,10 @@ footer #tripadvisor i {
     margin: 100px auto;
 }
 
+#events-header {
+    background-image: linear-gradient(to bottom, transparent, #000),url(../images/header-photos/events-header.webp);
+}
+
 .events-card h2 {
     font-size: 2em;
 }
@@ -1039,19 +1043,19 @@ footer #tripadvisor i {
 }
 
 #halloween .right-side {
-    background-image: url("../images/events-cards/halloween.jpg");
+    background-image: url("../images/events-cards/halloween.webp");
 }
 
 #oktoberfest .right-side {
-    background-image: url("../images/events-cards/oktoberfest.jpg");
+    background-image: url("../images/events-cards/oktoberfest.webp");
 }
 
 #christmas .right-side {
-    background-image: url("../images/events-cards/christmas.jpg");
+    background-image: url("../images/events-cards/christmas.webp");
 }
 
 #lunar .right-side {
-    background-image: url("../images/events-cards/lunar.jpg");
+    background-image: url("../images/events-cards/lunar.webp");
 }
 
 
