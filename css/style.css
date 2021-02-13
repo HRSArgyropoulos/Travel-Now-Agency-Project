@@ -905,18 +905,24 @@ footer #tripadvisor i {
     background-image: linear-gradient(to bottom, transparent, #000),url('../images/header-photos/dest-top.jpg');
 }
 
-#destinations {
-    background: linear-gradient(var(--purple),white);
+.dest-card {
+    /* background: linear-gradient(var(--purple),white); */
+    background: var(--purple);
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.dest-card {
-    padding: 60px 0;
-    display: flex;
-    position: relative;
-    background-image: url(../images/destinations/ams.jpg);
+.dest-image-gallery {
+    flex: 1;
+    display: block;
+}
+
+.dest-image {
+    background: url("../images/destinations/ams.jpg") center no-repeat;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    /* clip-path: polygon(0% 0%, 75% 0%, 90% 50%, 75% 100%, 0% 100%); */
+    min-height: 300px;
+    height: 100%;
 }
 
 .dot {
@@ -927,24 +933,12 @@ footer #tripadvisor i {
     list-style-type: "- ";
 }
 
-#LONDON {
-    background-image: url(../images/destinations/ldn.jpg);
-    background-position: bottom;
-}
-
 .dest-content {
-    width: 75%;
+    flex: 2;
     min-height: 600px;
-    margin: 0 auto;
-    backdrop-filter: blur(10px);
     padding: 2em;
-    border-radius: 25px;
-}
-
-.dest-content {
-    color: white;
-    background-color: rgb(54, 54, 54, 0.65);
-    box-shadow: 0 3px 10px 0 rgb(0 0 0 / 50%)
+    color: black;
+    /* background-color: rgb(54, 54, 54, 0.65); */
 }
 
 .dest-content h2 {
@@ -962,7 +956,6 @@ footer #tripadvisor i {
 }
 .dest-content nav ul {
     overflow: auto;
-    white-space: nowrap;
 }
 
 .dest-content nav ul::-webkit-scrollbar {
@@ -981,13 +974,21 @@ footer #tripadvisor i {
     display: block;
 }
 
-@media screen and (max-width: 600px) {
-    .dest-content {
-        width: 90%;
-    }
+#LONDON .dest-image {
+    background: url("../images/destinations/ldn.jpg") bottom no-repeat;
+    background-size: cover;
+}
 
-    .dest-content {
-        font-size: 1rem;
+#LONDON .dest-content {
+    background: var(--primary-grey);
+}
+
+@media screen and (max-width: 900px) {
+    .dest-image-gallery, .dest-content {
+        flex: 0 0 100%;
+    }
+    .dest-content h2 {
+        text-align: center;
     }
 }
 
