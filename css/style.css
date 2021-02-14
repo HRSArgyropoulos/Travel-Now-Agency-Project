@@ -262,11 +262,39 @@ nav .openMenu, nav .closeMenu{
 
 #search-input {
     border-radius: 5px;
-    width: 70%;
+    width: 80%;
     height: 3em;
     padding: 10px;
-    border: 3px solid var(--dark-grey);
     margin: 20px 0;
+}
+
+#search-drop-results {
+    display: none;
+    max-height: 30vh;
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 176px;
+    width: 79%;
+    overflow-y: hidden;
+}
+
+#search-drop-results a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    padding-right: 50px;
+    background-color: var(--primary-grey);
+}
+
+.dropdown-li img {
+    height: 100px;
+}
+
+.show-results {
+    display: block!important;
 }
 
 @media only screen and (max-width: 768px) {

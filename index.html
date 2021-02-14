@@ -11,6 +11,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" />
     <script src="js/navbar.js" defer></script>
     <script src="js/burger.js" defer></script>
+    <script src="js/search-drop-down.js" defer></script>
 </head>
 
 <body>
@@ -19,7 +20,8 @@
             <div id="top-section">
                 <div id="navbar">
                     <nav>
-                        <div id="logo"><!-- <a href="index.html"><img src="assets/logo-svg.svg" alt="Travel Now Logo" /></a> -->
+                        <div id="logo">
+                            <!-- <a href="index.html"><img src="assets/logo-svg.svg" alt="Travel Now Logo" /></a> -->
                             <a href="index.html"><img src="assets/logo-svg-anim.svg" alt="Travel Now Logo" /></a>
                         </div>
                         <div class="openMenu"><i class="fa fa-bars"></i></div>
@@ -38,8 +40,19 @@
                     <div id="search-core">
                         <h1 style="line-height: 1em">Your time for travel is now!</h1>
                         <h2>From Alaska to India we've got you covered.</h2>
-                        <form>
-                            <input id="search-input" type="text" placeholder="Search your dream destination">
+                        <form id="search-form" name="search-form" autocomplete="off">
+                            <input id="search-input" name="search-input" type="text"
+                                placeholder="Search your dream destination">
+                            <ul id="search-drop-results">
+                                <!-- <li class="dropdown-li">
+                                    <a href="destinations.html">
+                                        <img src="./images/destinations/ldn.jpg" alt="">
+                                        <span>London</span>
+                                        <span>4 Days</span>
+                                        <span>550 ₤</span>
+                                    </a>
+                                </li> -->
+                            </ul>
                             <button class="green-button" type="submit">Go!</button>
                         </form>
                     </div>
@@ -96,7 +109,7 @@
 
         </div>
     </div>
-    
+
 
     <!--As Captured on Instagram Section-->
     <section id="insta">
