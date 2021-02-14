@@ -50,7 +50,8 @@ input.addEventListener("input",(event) => {
             }
         }
         /* if (match) console.log(`MATCH ${dest.location}`); */
-        if (match && !checkDoubleLi(dest) && key!="")  dropdown.appendChild(createLiResult(dest));
+        if (match && !destExists(dest) && key!="")  dropdown.appendChild(createLiResult(dest));
+        if (!match && destExists(dest)) dropdown.removeChild(document.getElementsByClassName(`${dest.location}`)[0]);
     }
 });
 
@@ -87,7 +88,7 @@ const createLiResult = (dest) => {
     return li;
 }
 
-const checkDoubleLi = (dest) => {
+const destExists = (dest) => {
     for (const li of resultsList.children) {
         if (li.classList.contains(`${dest.location}`)) return true;
     }
