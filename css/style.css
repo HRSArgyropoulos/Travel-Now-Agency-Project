@@ -527,6 +527,12 @@ nav .openMenu, nav .closeMenu{
 
 /* Footer */
 
+#skyline {
+    margin-top: 50px;
+    position: relative;
+    bottom: -10px;
+}
+
 footer {
     background-color:black;
     color: white;
