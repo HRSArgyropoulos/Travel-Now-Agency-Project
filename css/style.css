@@ -279,6 +279,10 @@ nav .openMenu, nav .closeMenu{
     overflow-y: hidden;
 }
 
+#search-form:focus-within #search-drop-results {
+    display: block;
+}
+
 #search-drop-results a {
     width: 100%;
     display: flex;

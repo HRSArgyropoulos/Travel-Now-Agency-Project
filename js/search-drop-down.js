@@ -4,14 +4,14 @@ const input = document.getElementById("search-input");
 const dropdown = document.getElementById("search-drop-results");
 
 //show dropdown list
-input.addEventListener("focus", () => {
+/* input.addEventListener("focus", () => {
     dropdown.classList.add("show-results");
 });
 
 //hide dropdown list
 input.addEventListener("focusout", () => {
     dropdown.classList.remove("show-results");
-})
+}) */
 
 const resultsList = document.getElementById("search-drop-results");
 
