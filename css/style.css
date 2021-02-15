@@ -982,23 +982,26 @@ footer #tripadvisor i {
 }
 
 .dest-card {
-    /* background: linear-gradient(var(--purple),white); */
-    background: var(--purple);
     display: flex;
     flex-wrap: wrap;
+}
+
+#destinations hr {
+    border: 2px solid var(--purple);
+    background-color: var(--primary-green);
 }
 
 .dest-image-gallery {
     flex: 1;
     display: block;
+    /* filter: drop-shadow(0 2px 5px rgb(0 0 0 / 50%)); */
 }
 
 .dest-image {
-    background: url("../images/destinations/ams.jpg") center no-repeat;
-    background-size: cover;
-    /* clip-path: polygon(0% 0%, 75% 0%, 90% 50%, 75% 100%, 0% 100%); */
+    clip-path: polygon(85% 0, 100% 50%, 85% 100%, 0% 100%, 0% 0%);
     min-height: 300px;
     height: 100%;
+    box-shadow: 5px 0 10px 0 black;
 }
 
 .dot {
@@ -1050,13 +1053,29 @@ footer #tripadvisor i {
     display: block;
 }
 
-#LONDON .dest-image {
+#Amsterdam .dest-image {
+    background: url("../images/destinations/ams.jpg") center no-repeat;
+    background-size: cover;
+}
+
+#London .dest-image {
     background: url("../images/destinations/ldn.jpg") bottom no-repeat;
     background-size: cover;
 }
 
-#LONDON .dest-content {
-    background: var(--primary-grey);
+#Toronto .dest-image {
+    background: url("https://images.unsplash.com/photo-1444946112669-f13c38fe14a0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80") right no-repeat;
+    background-size: cover;
+}
+
+#Paris .dest-image {
+    background: url("https://images.unsplash.com/photo-1507666664345-c49223375e33?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1353&q=80") center no-repeat;
+    background-size: cover;
+}
+
+#Barcelona .dest-image {
+    background: url("https://images.unsplash.com/photo-1539037116277-4db20889f2d4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80") center no-repeat;
+    background-size: cover;
 }
 
 @media screen and (max-width: 900px) {
