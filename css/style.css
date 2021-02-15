@@ -41,7 +41,7 @@ a {
     background-color:var(--primary-green);
     width: auto;
     height: 3em;
-    border-radius: 0 10px 10px 0;
+    border-radius: 10px;
     border: none;
     padding: 0.5em 2em;
 }
@@ -252,16 +252,13 @@ nav .openMenu, nav .closeMenu{
 }
 
 #search-core {
-    padding-left: 1em;
     position: absolute;
     top: 35%;
     transform: translateY(-50%);
-    width: 50%;
+    width: 60%;
 } 
 
 #search-form {
-    display: flex;
-    align-items: center;
     margin-top: 20px;
 }
 
@@ -269,34 +266,52 @@ nav .openMenu, nav .closeMenu{
     border-radius: 10px 0 0 10px;
     border: none;
     outline: none;
-    width: 100%;
     height: 3em;
     padding: 10px;
+}
+
+#search-bar {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#search-button {
+    width: 100px;
+    height: 3em;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    padding: 0.5em 2em;
 }
 
 #search-drop-results {
     display: none;
     border-radius: 0 0 10px 10px;
-    max-height: 300px;
     background-color: white;
     color: black;
-    position: absolute;
-    top: 177px;
-    width: 90%;
     overflow-y: hidden;
+    width: calc(100% - 100px);
+    position: absolute;
+    z-index: 3;
 }
 
 #search-form:focus-within #search-drop-results {
     display: block;
 }
 
-#search-form:focus-within #search-input {
+#search-input:focus-within {
     border-radius: 10px 0 0 0;
+}
+
+#search-drop-results li:last-child a{
+    border-radius: 0 0 10px 10px;
+}
+
+#search-drop-results li a:hover {
+    background-color: var(--light-green)!important;
 }
 
 #search-drop-results a {
     width: 100%;
-    border-radius: 0 0 10px 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -309,28 +324,39 @@ nav .openMenu, nav .closeMenu{
     height: 100px;
 }
 
+
+
 .show-results {
     display: block!important;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
     #search-core {
-        width: 75%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #search-drop-results {
+        width: 100%;
     }
 }
 
 @media only screen and (max-width: 420px) {
-    #search-core {
-        width: 90%;
-        margin: 0 auto;
-    }
-
     #search-core h2 {
         display: none;
     }
 
     #search-core h1 {
         font-size: 2.5em;
+    }
+
+    #search-drop-results a{
+        padding-right: 0.5rem;
+    }
+
+    .dropdown-li img{
+        height: 75px;
     }
 }
 
