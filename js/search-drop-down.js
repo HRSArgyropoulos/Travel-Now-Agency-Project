@@ -2,58 +2,34 @@
 
 const input = document.getElementById("search-input");
 const dropdown = document.getElementById("search-drop-results");
-
-//show dropdown list
-/* input.addEventListener("focus", () => {
-    dropdown.classList.add("show-results");
-});
-
-//hide dropdown list
-input.addEventListener("focusout", () => {
-    dropdown.classList.remove("show-results");
-}) */
-
 const resultsList = document.getElementById("search-drop-results");
 
 //array with objects of destinations -> JSON
-const destinations = [
-    {
-        location: "London",
-        image: "./images/destinations/ldn.jpg",
-        days: 4,
-        price: 450
-    },
-    {
-        location: "Amsterdam",
-        image: "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-        days: 5,
-        price: 550
-    },
-    {
-        location: "New-York",
-        image: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-        days: 10,
-        price: 1050
-    },
-];
+window.addEventListener('DOMContentLoaded', () => {
+    fetch('../destinations-data.json')
+        .then(response => response.json())
+        .then(json => search(json));
+});
+
 
 //check key for dest location name
-input.addEventListener("input",(event) => {
-    const key = event.target.value;
-    console.log(key);
-    for (const dest of destinations) {
-        let match = true;
-        for (let i=0; i<key.length; i++) {
-            if (key[i] !== dest.location[i]) {
-                match = false;
-                break;
+function search(destinations) {
+    input.addEventListener("input",(event) => {
+        const key = event.target.value;
+        console.log(key);
+        for (const dest of destinations) {
+            let match = true;
+            for (let i=0; i<key.length; i++) {
+                if (key[i] !== dest.location[i]) {
+                    match = false;
+                    break;
+                }
             }
+            if (match && !destExists(dest) && key!="")  dropdown.appendChild(createLiResult(dest));
+            if (!match && destExists(dest)) dropdown.removeChild(document.getElementsByClassName(`${dest.location}`)[0]);
         }
-        /* if (match) console.log(`MATCH ${dest.location}`); */
-        if (match && !destExists(dest) && key!="")  dropdown.appendChild(createLiResult(dest));
-        if (!match && destExists(dest)) dropdown.removeChild(document.getElementsByClassName(`${dest.location}`)[0]);
-    }
-});
+    });
+}
 
 
 
