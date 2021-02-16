@@ -6,6 +6,7 @@
     --primary-green:#00ffb9;
     --light-green: rgb(185,250,248,0.5); /*mint*/
     --purple: #c7bbff;
+    --blue-contact: #49d1ff;
 }
 
 * {
@@ -1197,16 +1198,25 @@ footer #tripadvisor i {
 }
 
 #contact {
-    width:80%;
-    margin: 100px auto;
+    width: 90%;
+    margin: 75px auto;
     display: flex;
-    justify-content: space-between; /*or space around*/
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
 
+/* FORM */
+
+#form-wrapper {
+    box-shadow: 0 1px 5px 0 rgb(0 0 0 / 30%);
+    border-radius: 10px;
+    flex: 0 1 40%;
+}
+
 form {
     font-size: 1.1em;
+    padding: 1.5rem 2rem;
 }
 
 form h2{
@@ -1241,15 +1251,38 @@ form textarea {
     margin: 0 auto;
 }
 
-#contact-details {
-    text-align: center;
-    padding: 50px;
+/* FAQ */
+
+#lft-side {
+    flex: 0 1 50%;
 }
 
-/*MEDIA QUERIES*/
-@media screen and (max-width: 768px) {
-    #contact {
-        display: block;
+#faq a {
+    display: block;
+    padding: 0.7rem 0.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+#faq a:hover {
+    background-color: var(--purple);
+}
+
+#faq i {
+    margin-right: 0.5rem;
+}
+
+#faq ul > * {
+    background-color: var(--primary-grey);
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 5px 0 rgb(0 0 0 / 30%);
+}
+
+@media screen and (max-width: 1000px) {
+    #lft-side, #form-wrapper {
+        flex: 0 0 100%;
     }
 }
 
@@ -1289,7 +1322,7 @@ form textarea {
 }
 
 .location-card i {
-    color: #008CBA;
+    color: var(--blue-contact);
 }
 
 .location-card .fa-map-marker-alt{
