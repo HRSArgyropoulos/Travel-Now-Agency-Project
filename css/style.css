@@ -107,6 +107,19 @@ a {
                             /*HOMEPAGE*/
 
 /*Header*/
+#homepage {
+    background: var(--primary-grey) url('../images/test/test2.webp');
+    background-position: center;
+    background-repeat: no-repeat ;
+    background-size: cover ;
+    width: 100%;
+    height: 70vh;
+    position: relative;
+}
+
+#homepage #nav-items a{
+    color: white;
+}
 
 #top-logo a {
     display: block;
@@ -163,9 +176,6 @@ nav ul li {
     border-bottom: 3px solid var(--primary-green);
 }
 
-#top-section a{
-    color: white;
-}
 
     .sticky-nav {
         position: fixed;
@@ -242,16 +252,6 @@ nav .openMenu, nav .closeMenu{
 }
 
 /*Search*/
-
-#top-section{
-    background: var(--primary-grey) url('../images/test/test2.webp');
-    background-position: center;
-    background-repeat: no-repeat ;
-    background-size: cover ;
-    width: 100%;
-    height: 70vh;
-    position: relative;
-}
 
 #search {
     max-width: 1600px;
