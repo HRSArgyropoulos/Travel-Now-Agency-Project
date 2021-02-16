@@ -25,8 +25,9 @@ function search(destinations) {
                     break;
                 }
             }
-            if (match && !destExists(dest) && key!="")  dropdown.appendChild(createLiResult(dest));
+            if (match && !destExists(dest) && key!="" && dropdown.childElementCount<3)  dropdown.appendChild(createLiResult(dest));
             if (!match && destExists(dest)) dropdown.removeChild(document.getElementsByClassName(`${dest.location}`)[0]);
+            if (key==="") dropdown.innerHTML="";
         }
     });
 }
