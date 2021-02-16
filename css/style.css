@@ -250,6 +250,7 @@ nav .openMenu, nav .closeMenu{
     background-size: cover ;
     width: 100%;
     height: 70vh;
+    position: relative;
 }
 
 #search {
@@ -261,7 +262,7 @@ nav .openMenu, nav .closeMenu{
 
 #search-core {
     position: absolute;
-    top: 35%;
+    top: 50%;
     transform: translateY(-50%);
     width: 60%;
 } 
@@ -426,6 +427,14 @@ nav .openMenu, nav .closeMenu{
     width: 90%;
     float: right;
     border-radius: 0 10px 0 0 ;
+}
+
+/* Photo of the day */
+#photo-of-the-day {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
 }
 
 /* As captured on Instagram */
