@@ -30,6 +30,7 @@ ul {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 .headings {
@@ -364,13 +365,12 @@ nav .openMenu, nav .closeMenu{
 /* Top Destinations */
 
 #top-dest {
-    /* background-color: var(--primary-grey); */
     width: 100%;
     margin: 100px 0;
     position: relative;
 }
 
-#top-dest button {
+#dest-button {
     position: absolute;
     right: 200px;
     bottom: 10px;
@@ -727,8 +727,10 @@ footer #tripadvisor i {
 
 @media screen and (max-width: 768px) {
     /*Covid*/
-    .desk-button {
-        display: none;
+    #dest-button {
+        right: 50%;
+        transform: translateX(50%);
+        bottom: 0;
     }
     /*Top Destinations*/
 
