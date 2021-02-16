@@ -41,10 +41,16 @@ a {
 
 .green-button {
     background-color:var(--primary-green);
-    width: auto;
+    width: 100px;
     height: 3em;
     border-radius: 10px;
     border: none;
+    cursor: pointer;
+}
+
+.green-button a {
+    display: block;
+    height: inherit;
     padding: 0.5em 2em;
 }
 
@@ -375,6 +381,8 @@ nav .openMenu, nav .closeMenu{
     right: 200px;
     bottom: 10px;
     z-index: 10;
+    width: auto;
+    line-height: 2em;
 }
 
 #dest-cards {
