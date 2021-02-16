@@ -176,41 +176,39 @@ nav ul li {
     border-bottom: 3px solid var(--primary-green);
 }
 
+.sticky-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: saturate(180%) blur(20px);
+    box-shadow: 0 1px 15px;
+    height: 60px;
+}
 
-    .sticky-nav {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 50;
-        background-color: rgba(0, 0, 0, 0.8);
-        backdrop-filter: saturate(180%) blur(20px);
-        box-shadow: 0 1px 15px;
-        height: 60px;
+@media screen and (max-width:768px) {
+    .sticky-nav, .sticky-nav #nav-items {
+        background-color: rgba(0, 0, 0, 0.95);
+        backdrop-filter: none;
     }
+}
 
-    @media screen and (max-width:768px) {
-        .sticky-nav, .sticky-nav #nav-items {
-            background-color: rgba(0, 0, 0, 0.95);
-            backdrop-filter: none;
-        }
-    }
+.sticky-nav #logo img {
+    height: 60px;
+}
 
-    .sticky-nav #logo img {
-        height: 60px;
-    }
+.sticky-nav .openMenu {
+    margin: 0 20px;
+}
 
-    .sticky-nav .openMenu {
-        margin: 0 20px;
-    }
+.sticky-nav-subpage {
+    background: rgba(255,255,255, 0.75);
+}
 
-    .sticky-nav-subpage {
-        background: rgba(255,255,255, 0.75);
-    }
-
-    #navbar {
-        padding-top: 0;
-    }
-
+#navbar {
+    padding-top: 0;
+}
 
 /*Burger Menu*/
 .fa-bars, .fa-times {
@@ -260,6 +258,7 @@ nav .openMenu, nav .closeMenu{
     top: 50%;
     left: 10%;
     transform: translateY(-50%);
+    z-index: 3;
 }
 
 #search-form {
@@ -373,6 +372,7 @@ nav .openMenu, nav .closeMenu{
     width: 100%;
     margin: 100px 0;
     position: relative;
+    z-index: 2;
 }
 
 #dest-button {
