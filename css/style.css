@@ -591,15 +591,24 @@ footer a {
     top: -75px;
     right: 75px;
     padding: 25px 50px;
-    box-shadow: 10px 10px 50px #000;
+    box-shadow: 0 -1px 7px rgb(61, 61, 61);
 }
 
-#newsletter input {
-    width: 75%;
+#newsletter form {
+    padding: 0;
+    display: flex;
+    height: 50px;
+    flex-wrap: nowrap;
 }
 
 #newsletter .green-button {
     background-color: white;
+    height: 100%;
+}
+
+#newsletter form input {
+    height: 100%;
+    margin-right: 0.5rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -607,7 +616,7 @@ footer a {
         right: 50%;
         transform: translateX(50%);
         width: 350px;
-        padding: 25px;
+        padding: 20px;
     }
 
     #newsletter h3 {
