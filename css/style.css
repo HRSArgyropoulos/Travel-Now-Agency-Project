@@ -139,7 +139,7 @@ hr {
 
 nav {
     max-height: 100px;
-    max-width: 1650px;
+    max-width: 1700px;
     margin: 0 auto;
     overflow: hidden;
     display: flex;
@@ -254,18 +254,16 @@ nav .openMenu, nav .closeMenu{
 /*Search*/
 
 #search {
-    max-width: 1600px;
-    margin: 0 auto;
+    max-width: 1700px;
     color: white;
     font-weight: lighter;
-}
-
-#search-core {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     width: 60%;
-} 
+    margin: 0 auto;
+    left: 10%;
+}
 
 #search-form {
     margin-top: 20px;
@@ -277,6 +275,7 @@ nav .openMenu, nav .closeMenu{
     outline: none;
     height: 3em;
     padding: 10px;
+    width: 100%;
 }
 
 #search-bar {
@@ -339,24 +338,24 @@ nav .openMenu, nav .closeMenu{
     display: block!important;
 }
 
-@media only screen and (max-width: 1000px) {
-    #search-core {
-        width: 100%;
-    }
-}
 
 @media screen and (max-width: 768px) {
     #search-drop-results {
         width: 100%;
     }
+
+    #search {
+        width: 90%;
+        left: 5%;
+    }
 }
 
 @media only screen and (max-width: 420px) {
-    #search-core h2 {
+    #search h2 {
         display: none;
     }
 
-    #search-core h1 {
+    #search h1 {
         font-size: 2.5em;
     }
 
@@ -1242,12 +1241,12 @@ footer #tripadvisor i {
     flex: 0 1 40%;
 }
 
-form {
+#contact-form {
     font-size: 1.1em;
     padding: 1.5rem 2rem;
 }
 
-form h2{
+#contact-form h2{
     padding-bottom: 30px;
 }
 
@@ -1255,22 +1254,22 @@ form h2{
     font-size: 1.7em;
 }
 
-form label {
+#contact-form label {
     color: var(--dark-grey);
 }
 
-form input, form textarea, form select {
+#contact-form input, #contact-form textarea, #contact-form select {
     width: 100%;
     padding-left: 5px ;
     height: 2.5em;
 }
 
-form textarea, form select {
+#contact-form textarea, #contact-form select {
     font-size: inherit;
     font-family: inherit;
 }
 
-form textarea {
+#contact-form textarea {
     height: 10em;
 }
 
