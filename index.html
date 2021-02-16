@@ -9,9 +9,12 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="js/navbar.js" defer></script>
     <script src="js/burger.js" defer></script>
     <script src="js/search-drop-down.js" defer></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+    <script src="./js/aos-global-settings.js" defer></script>
 </head>
 
 <body>
@@ -38,23 +41,25 @@
                 <!--Search-->
                 <section id="search">
                     <div id="search-core">
-                        <h1 style="line-height: 1em">Your time for travel is now!</h1>
-                        <h2>From Alaska to India we've got you covered.</h2>
+                        <div id="search-text" data-aos="fade-right">
+                            <h1 style="line-height: 1em">Your time for travel is now!</h1>
+                            <h2>From Alaska to India we've got you covered.</h2>
+                        </div>
                         <form id="search-form" name="search-form" autocomplete="off">
-                            <div id="search-bar">
+                            <div id="search-bar" data-aos="zoom-in" data-aos-delay="500">
                                 <input id="search-input" name="search-input" type="text"
                                     placeholder="Search your dream destination">
                                 <button id="search-button" class="green-button" type="submit">Go!</button>
                             </div>
                             <ul id="search-drop-results"></ul>
-                        </form>   
+                        </form>
                     </div>
                 </section>
             </div>
         </header>
     </div>
     <!--Top Destinations Section-->
-    <div id="top-dest">
+    <div id="top-dest" data-aos="fade-up" data-aos-delay="1200">
         <h1 class="headings">TOP DESTINATIONS</h1>
         <button class="green-button desk-button" href="#">View More</button>
         <!--Top Destination Card #1-->
@@ -116,7 +121,7 @@
                     transform="matrix(.77976 0 0 .78395-299.99-418.63)" fill="#c7bbff" /></svg>
         </div>
         <div id="grid-insta">
-            <div class="insta-photo" id="insta1">
+            <div class="insta-photo" id="insta1" data-aos="fade-up">
                 <img src="images/insta/tokyojpn.webp" alt="Tokyo, Japan">
                 <div class="insta-overlay">
                     <div class="insta-text">
@@ -125,7 +130,7 @@
                     </div>
                 </div>
             </div>
-            <div class="insta-photo" id="insta2">
+            <div class="insta-photo" id="insta2" data-aos="fade-up">
                 <img src="images/insta/torontocnd.webp" alt="Toronto, Canada">
                 <div class="insta-overlay">
                     <div class="insta-text">
@@ -134,7 +139,7 @@
                     </div>
                 </div>
             </div>
-            <div class="insta-photo" id="insta3">
+            <div class="insta-photo" id="insta3" data-aos="fade-up">
                 <img src="images/insta/manarolaitl.webp" alt="Manarola, Italy">
                 <div class="insta-overlay">
                     <div class="insta-text">
@@ -143,7 +148,7 @@
                     </div>
                 </div>
             </div>
-            <div class="insta-photo" id="insta4">
+            <div class="insta-photo" id="insta4" data-aos="fade-up">
                 <img src="images/insta/hamburggrm.webp" alt="Hamburg, Germany">
                 <div class="insta-overlay">
                     <div class="insta-text">
@@ -157,7 +162,7 @@
     <!--Partners-->
     <section id="partners">
         <h1 class="headings">OUR PARTNERS</h1>
-        <div>
+        <div data-aos="fade-up">
             <img src="images/partners/lufthansa.png" alt="Lufthansa Logo" />
             <img src="images/partners/british-airways.png" alt="British Airways Logo" />
             <img src="images/partners/emirates.png" alt="Emirates Logo" />
@@ -168,7 +173,7 @@
     <!--Customer Reviews-->
     <section id="customer-reviews">
         <h1 class="headings">WHAT OUR CUSTOMERS SAY</h1>
-        <ul>
+        <ul data-aos="fade-down">
             <li>
                 <img style="float: left;" src="assets/quotation-mark-left.svg" alt="Start Quote">
                 <div class="review-text">
