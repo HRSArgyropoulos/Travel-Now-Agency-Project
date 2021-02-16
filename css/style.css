@@ -254,38 +254,34 @@ nav .openMenu, nav .closeMenu{
 /*Search*/
 
 #search {
-    max-width: 1700px;
+    width: 60%;
     color: white;
-    font-weight: lighter;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    width: 60%;
-    margin: 0 auto;
     left: 10%;
+    transform: translateY(-50%);
 }
 
 #search-form {
-    margin-top: 20px;
+    margin-top: 2rem;
+}
+
+#search-bar {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 3em;
 }
 
 #search-input {
     border-radius: 10px 0 0 10px;
     border: none;
     outline: none;
-    height: 3em;
     padding: 10px;
     width: 100%;
 }
 
-#search-bar {
-    display: flex;
-    flex-wrap: nowrap;
-}
-
 #search-button {
     width: 100px;
-    height: 3em;
     border-radius: 0 10px 10px 0;
     border: none;
     padding: 0.5em 2em;
@@ -297,7 +293,7 @@ nav .openMenu, nav .closeMenu{
     background-color: white;
     color: black;
     overflow-y: hidden;
-    width: calc(100% - 100px);
+    width: calc(100%);
     position: absolute;
     z-index: 3;
 }
@@ -308,6 +304,10 @@ nav .openMenu, nav .closeMenu{
 
 #search-input:focus-within {
     border-radius: 10px 0 0 0;
+}
+
+#search-form:focus-within #search-button{
+    border-radius: 0 10px 0 0;
 }
 
 #search-drop-results li:last-child a{
@@ -331,7 +331,6 @@ nav .openMenu, nav .closeMenu{
 .dropdown-li img {
     height: 100px;
 }
-
 
 
 .show-results {
