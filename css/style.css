@@ -7,6 +7,7 @@
     --light-green: rgb(185,250,248,0.5); /*mint*/
     --purple: #c7bbff;
     --blue-contact: #49d1ff;
+    --lighter-grey:rgb(248, 248, 248);
 }
 
 * {
@@ -605,7 +606,7 @@ footer a {
     position: absolute;
     top: -75px;
     right: 75px;
-    padding: 25px 50px;
+    padding: 25px 35px;
     box-shadow: 0 -1px 7px rgb(61, 61, 61);
 }
 
@@ -619,11 +620,20 @@ footer a {
 #newsletter .green-button {
     background-color: white;
     height: 100%;
+    margin-top: 0.5rem;
 }
 
 #newsletter form input {
     height: 100%;
-    margin-right: 0.5rem;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 0.5rem 0.5rem 0 0;
+    padding-left: 0.5rem;
+}
+
+#newsletter input:focus{
+    background-color: var(--lighter-grey);
 }
 
 @media screen and (max-width: 768px) {
@@ -1224,7 +1234,8 @@ footer #tripadvisor i {
 }
 
 #contact {
-    width: 90%;
+    width: 95%;
+    max-width: 1700px;
     margin: 75px auto;
     display: flex;
     justify-content: space-between;
@@ -1237,11 +1248,11 @@ footer #tripadvisor i {
 #form-wrapper {
     box-shadow: 0 1px 5px 0 rgb(0 0 0 / 30%);
     border-radius: 10px;
-    flex: 0 1 40%;
+    flex: 0 1 35%;
 }
 
 #contact-form {
-    font-size: 1.1em;
+    font-size: 1em;
     padding: 1.5rem 2rem;
 }
 
@@ -1260,7 +1271,7 @@ footer #tripadvisor i {
 #contact-form input, #contact-form textarea, #contact-form select {
     width: 100%;
     padding-left: 5px ;
-    height: 2.5em;
+    height: 2em;
 }
 
 #contact-form textarea, #contact-form select {
