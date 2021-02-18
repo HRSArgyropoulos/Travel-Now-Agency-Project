@@ -1021,6 +1021,7 @@ footer #tripadvisor i {
 .dest-card {
     display: flex;
     flex-wrap: wrap;
+    margin: 50px 0;
 }
 
 #destinations hr {
@@ -1052,7 +1053,7 @@ footer #tripadvisor i {
 .dest-content {
     flex: 2;
     min-height: 600px;
-    padding: 2em;
+    padding: 1.5rem;
     color: black;
     /* background-color: rgb(54, 54, 54, 0.65); */
 }
@@ -1121,6 +1122,16 @@ footer #tripadvisor i {
     }
     .dest-content h2 {
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .dest-content nav {
+        font-size: 0.9rem;
+    }
+
+    .dest-content nav {
+        justify-content: center;
     }
 }
 
