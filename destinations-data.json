@@ -2,8 +2,8 @@
     {
         "location": "London",
         "image": "./images/destinations/ldn.jpg",
-        "days": 4,
-        "price": 449
+        "days": 6,
+        "price": 659
     },
     {
         "location": "Amsterdam",
@@ -12,22 +12,22 @@
         "price": 549
     },
     {
-        "location": "New-York",
-        "image": "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-        "days": 10,
-        "price": 1049
+        "location": "Barcelona",
+        "image": "https://images.unsplash.com/photo-1587789202069-f57c846b85db?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80",
+        "days": 4,
+        "price": 399
     },
     {
         "location":"Paris",
         "image": "https://images.unsplash.com/photo-1508050919630-b135583b29ab?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80",
-        "days": 5,
-        "price": 549
+        "days": 6,
+        "price": 599
     },
     {
         "location": "Toronto",
         "image": "https://images.unsplash.com/photo-1517090504586-fde19ea6066f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-        "days": 7,
-        "price": 659
+        "days": 8,
+        "price": 999
     },
     {
         "location": "Tbronto",
