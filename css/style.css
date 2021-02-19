@@ -552,26 +552,72 @@ nav .openMenu, nav .closeMenu{
 /* Customer Reviews */
 
 #customer-reviews {
-    background-color: var(--primary-grey);
     position: relative;
 }
 
 #customer-reviews ul {
-    margin: 0 100px;
-    text-align: center;
     display: flex;
     flex-wrap: wrap;
-    padding: 100px 0;
+    align-items: center;
 }
 
 #customer-reviews ul li {
-    font-size: 1.1em;
-    flex: 1;
-    padding: 0 3em;
+    z-index: -1;
+    flex: 1 20%;
 }
 
-.review-text {
-    padding: 20px 50px;
+#review-header {
+    background-color:rgb(17, 6, 29);
+    color: white;
+    position: relative;
+}
+
+#review-header h2 {
+    padding: 2.5rem 3rem;
+    font-size: 3rem;
+    line-height: 2em;
+}
+
+#customer-reviews ul li:nth-child(n+2) {
+    font-size: 1.1em;
+    padding: 1rem 1.5rem;
+}
+
+#customer-reviews hr {
+    border-width: 2px;
+    border-radius: 5px;
+}
+
+.quote {
+    margin-bottom: 1rem;
+    width: 2rem;
+}
+
+.review-by {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.review-by > small {
+    margin-right: 3rem;
+}
+
+.review-source {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.review-by img {
+    width: 100px;
+    padding-left: 0.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+    #review-header h2{
+        padding: 2rem 1rem;
+        font-size: 2.5rem;
+    }
 }
 
 @media only screen and (max-width: 420px) {
@@ -742,11 +788,6 @@ footer #tripadvisor i {
     border-radius: 50%;
     border-style: solid;
     border-color: var(--primary-green);
-}
-
-
-#customer-reviews img{
-    width: 1.8em;
 }
 
 /*MEDIA QUERIES*/
