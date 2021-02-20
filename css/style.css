@@ -570,7 +570,6 @@ nav .openMenu, nav .closeMenu{
     background-color:rgb(27, 10, 46);
     color: white;
     position: relative;
-    box-shadow: 2px 0 5px black;
 }
 
 #customer-reviews p {
@@ -666,6 +665,7 @@ footer a {
     right: 75px;
     padding: 25px 35px;
     box-shadow: 0 -1px 7px rgb(61, 61, 61);
+    border-radius: 5px;
 }
 
 #newsletter form {
@@ -868,7 +868,7 @@ footer #tripadvisor i {
                             /*ABOUT*/
 
 #about-header  {
-    background-image: linear-gradient(to bottom, transparent, #000), url('../images/header-photos/about-header.webp');
+    background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.9)), url('../images/header-photos/about-header2.jpg');
 }
 
 .sub-pages-header .fa-bars, .sub-pages-header .fa-times {
@@ -904,7 +904,7 @@ footer #tripadvisor i {
 }
 
 #about-started .about-ls {
-    background: url('../images/about-cards/started.webp') center no-repeat;
+    background: url('../images/about-cards/started2.jpg') center no-repeat;
     background-size: cover ;
 }
 
@@ -1069,7 +1069,7 @@ footer #tripadvisor i {
                             /*DESTINATIONS*/
 
 #destinations-header {
-    background-image: linear-gradient(to bottom, transparent, #000),url('../images/header-photos/dest-top.jpg');
+    background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.9)),url('../images/header-photos/dest-header2.jpg');
 }
 
 .dest-card {
@@ -1203,7 +1203,7 @@ footer #tripadvisor i {
 }
 
 #events-header {
-    background-image: linear-gradient(to bottom, transparent, #000),url(../images/header-photos/events-header.webp);
+    background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.9)),url(../images/header-photos/events-header.webp);
 }
 
 .events-card h2 {
@@ -1301,7 +1301,7 @@ footer #tripadvisor i {
 /* ############################################################ */
                             /*CONTACT US*/
 #contact-us-header  {
-    background-image: linear-gradient(to bottom, transparent, #000),url('../images/header-photos/contact-us-header.webp');
+    background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.9)),url('../images/header-photos/contact-us-header.webp');
 }
 
 #contact {
