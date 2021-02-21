@@ -512,16 +512,17 @@ nav .openMenu, nav .closeMenu{
     opacity: 0;
     transition: .5s ease;
     border-radius: 15px;
-    background-color: #008CBA;
+    backdrop-filter: saturate(150%) blur(10px);
+    -webkit-backdrop-filter: saturate(150%) blur(10px);
   }
   
   .insta-photo:hover .insta-overlay {
-    opacity: 0.85;
+    opacity: 1;
   }
   
   .insta-text {
     color: white;
-    font-size: 1.5rem;
+    font-size:1.9rem;
     position: absolute;
     top: 50%;
     left: 50%;
