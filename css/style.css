@@ -4,7 +4,7 @@
     --primary-grey:rgb(239, 239, 239,1);
     --dark-grey: #515151;
     --primary-green:#00ffb9;
-    --light-green: rgb(185,250,248,0.5); /*mint*/
+    --light-green: rgb(204, 248, 247);
     --purple: #c7bbff;
     --blue-contact: #e8f0fe;
     --lighter-grey:rgb(248, 248, 248);
@@ -891,10 +891,12 @@ footer #tripadvisor i {
     height: 350px;
     width: 90%;
     margin: 0 auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
 }
 
 .about-card .about-ls {
-    width: 25%;
+    width: 30%;
     height: 100%;
     display: inline-block;
     border-radius: 10px 0 0 10px;
@@ -916,7 +918,7 @@ footer #tripadvisor i {
 }
 
 .about-card .about-rs {
-    width: 75%;
+    width: 70%;
     background-color: var(--purple);
     height: inherit;
     float: right;
@@ -928,12 +930,12 @@ footer #tripadvisor i {
 .about-rs h1:first-child {
     color: white;
     padding-left: 5%;
+    padding-bottom: 0.5rem;
 }
 
 .about-card .about-rs p {
     width: 90%;
     margin: 0 auto;
-    text-align: justify;
 }
 
 .about-card {
@@ -944,7 +946,7 @@ footer #tripadvisor i {
 .about-headings {
     position: absolute;
     right: 0px;
-    bottom: -50px;
+    bottom: -45px;
 }
 
 @media screen and (max-width: 768px) {
@@ -953,7 +955,7 @@ footer #tripadvisor i {
     }
 
     .about-card {
-        height: 600px;
+        height: 700px;
     }
 
     .about-card .about-ls {
@@ -972,10 +974,6 @@ footer #tripadvisor i {
         height: 50%;
     }
 
-    .overflow {
-        display: none;
-    }
-
     #about-wrapper > div {
         margin: 50px auto;
     }
@@ -989,13 +987,18 @@ footer #tripadvisor i {
 
 /* Members Quotes*/
 #team-quotes {
-    /* background-color: var(--primary-grey); */
     background: linear-gradient(var(--light-green), #fff);
     margin-bottom: 150px;
 }
 
+.svg-wave {
+    position: relative;
+    bottom: -10px;
+    z-index: 0;
+}
+
 #team-quotes-wrapper {
-    padding: 20px 0;
+    padding: 10px 0;
     width: 85%;
     margin: 0 auto;
 }
@@ -1010,7 +1013,7 @@ footer #tripadvisor i {
 }
 
 .member-quote {
-    margin: 70px 0;
+    margin: 50px 0;
 }
 
 .member-quote-text {
