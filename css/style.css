@@ -568,7 +568,7 @@ nav .openMenu, nav .closeMenu{
 }
 
 #review-header {
-    background-color:rgb(27, 10, 46);
+    background-color:rgb(37, 13, 65);
     color: white;
     position: relative;
 }
@@ -602,10 +602,6 @@ nav .openMenu, nav .closeMenu{
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.review-by > small {
-    margin-right: 3rem;
 }
 
 .review-source {
