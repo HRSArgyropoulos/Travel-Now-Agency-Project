@@ -1340,7 +1340,7 @@ footer #tripadvisor i {
 #contact-form input, #contact-form textarea, #contact-form select {
     width: 100%;
     padding-left: 5px ;
-    height: 2.2rem;
+    height: 2.3rem;
     border-radius: 5px;
     border: 1px solid var(--dark-grey);
 }
@@ -1356,6 +1356,14 @@ footer #tripadvisor i {
 
 #contact-form textarea {
     height: 10em;
+}
+
+#contact-form .error{
+    border: 1px solid red;
+}
+
+#contact-form .valid {
+    border: 1px solid var(--dark-grey);
 }
 
 #contact button {
