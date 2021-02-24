@@ -1123,7 +1123,6 @@ footer #tripadvisor i {
 
 .dest-content nav {
     margin-bottom: 2rem;
-    
 }
 .dest-content nav ul {
     overflow: auto;
@@ -1144,6 +1143,22 @@ footer #tripadvisor i {
 .show {
     display: block;
     animation: showAnimation 0.4s ease-in;
+}
+
+/* api results */
+.flightsList > li{
+    padding: 1rem;
+    margin-bottom: 10px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flightsList i {
+    color: rgb(66, 101, 255);
 }
 
 @keyframes showAnimation {
