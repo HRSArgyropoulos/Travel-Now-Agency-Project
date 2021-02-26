@@ -51,7 +51,7 @@ const quoteQuery = { //QUOTE INFO
     "locale" : "en-GB",
     "originPlace" : "LHR", //LHR-iata
     "destinationPlace" : "", //AMS-iata
-    "outboundPartialDate" : "2021-03-14", //YYYY-MM-DD
+    "outboundPartialDate" : "2021-03-11", //YYYY-MM-DD
     "inboundPartialDate" : "" // empty for one-way OPTIONAL
 }
 
@@ -63,6 +63,8 @@ const getQuotes = (destination) => {
             if (document.querySelector(`#${destination.location} .flightQuotes ul`).innerHTML===""){
                 let quoteURL = SKYURL + "/browsequotes/v1.0"; //quotes endpoint
                 quoteQuery.destinationPlace = `${destination.iata}`;
+                let outboundDay = parseInt(quoteQuery.outboundPartialDate.slice(8,10))+destination.days;
+                quoteQuery.inboundPartialDate = quoteQuery.outboundPartialDate.slice(0,8)+outboundDay;
                 for (const parameter in quoteQuery) {
                     quoteURL += `/${quoteQuery[parameter]}`;
                 }
