@@ -1210,6 +1210,137 @@ footer #tripadvisor i {
     }
 }
 
+/* IMAGE GALLERY */
+
+#more-destinations {
+    width: 100%;
+    background: var(--lighter-grey);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#more-destinations-text {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+}
+
+#more-destinations h3{
+    margin-bottom: 1rem;
+}
+
+#gallery-container {
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 0 15px;
+    flex: 2;
+}
+
+#gallery img{
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    /* animation: imganimation 1s 3s forwards; */
+}
+
+#gallery {
+    position: relative;
+}
+
+.icons {
+    color: white;
+}
+
+#right-arrow {
+    position: absolute;
+    bottom: 50%;
+    right: 0;
+    transform: translate( 0 ,50% );
+}
+
+#left-arrow {
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    transform: translate( 0 ,50% );
+}
+
+/* Thumbnails */
+#thumbnails {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-row: 100px;
+    gap: 5px;
+}
+
+#thumbnails img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 0 0 15px 15px;
+}
+
+/*Controls*/
+
+#controls i{
+    position: absolute;
+    bottom: 2%;
+    color: black;
+    display: block;
+    padding: 20px;
+    background-color: white;
+    border-radius: 50%;
+    transform: translate( -50% , 0 );
+}
+
+#controls .fa-play {
+    left: 45%;
+}
+
+#controls .fa-pause {
+    left: 55%;
+}
+
+@media (max-width: 666px) {
+    #more-destinations > div {
+        flex: 1 1 100%
+    }
+}
+
+/* @keyframes imganimation {
+    0% {opacity: 1.0;}
+    50% {opacity: 0.0;}
+    100% {opacity: 1.0;}
+}
+ */
+
+/*Transition Bar*/
+/* #transition-bar {
+    width: 100%;
+    height: 20px;
+    background-color: black;
+}
+
+#bar {
+    width: 1%;
+    height: 50%;
+    background-color: white;
+    position: relative;
+    animation: load 3s;
+}
+
+@keyframes load {
+    0% {
+        left:0;
+    }
+    100% {
+        left: 100%;
+    }
+} */
+
 /* ############################################################ */
                             /*EVENTS*/
 #events-wrapper, #about-wrapper {
