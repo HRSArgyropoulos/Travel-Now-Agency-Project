@@ -3,10 +3,10 @@
 window.onload = function () {
   /*Array of slides*/
   const slidesArray = [
-    ["images/destinations/img-gallery/slide-1.jpg", "Slide 1"],
-    ["images/destinations/img-gallery/slide-2.jpg", "Slide 2"],
-    ["images/destinations/img-gallery/slide-3.jpg", "Slide 3"],
-    ["images/destinations/img-gallery/slide-4.jpg", "Slide 4"],
+    ["images/destinations/img-gallery/slide-1.webp", "Slide 1"],
+    ["images/destinations/img-gallery/slide-2.webp", "Slide 2"],
+    ["images/destinations/img-gallery/slide-3.webp", "Slide 3"],
+    ["images/destinations/img-gallery/slide-4.webp", "Slide 4"],
   ];
   let slideIndex = 0;
 

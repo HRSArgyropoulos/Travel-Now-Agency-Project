@@ -109,7 +109,7 @@ a {
 
 /*Header*/
 #homepage {
-    background: var(--primary-grey) url('../images/test/test2.webp');
+    background: var(--primary-grey) url('../images/header-photos/main-header.webp');
     background-position: center;
     background-repeat: no-repeat ;
     background-size: cover ;
@@ -865,7 +865,7 @@ footer #tripadvisor i {
                             /*ABOUT*/
 
 #about-header  {
-    background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.9)), url('../images/header-photos/about-header2.jpg');
+    background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.9)), url('../images/header-photos/about-header.webp');
 }
 
 .sub-pages-header .fa-bars, .sub-pages-header .fa-times {
@@ -891,7 +891,7 @@ footer #tripadvisor i {
     height: 350px;
     width: 90%;
     margin: 0 auto;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
 }
 
@@ -902,8 +902,8 @@ footer #tripadvisor i {
     border-radius: 10px 0 0 10px;
 }
 
-#about-started .about-ls {
-    background: url('../images/about-cards/started2.jpg') center no-repeat;
+#about-vision .about-ls {
+    background: url('../images/about-cards/vision.webp') bottom no-repeat;
     background-size: cover ;
 }
 
@@ -925,7 +925,7 @@ footer #tripadvisor i {
     border-radius: 0 10px 10px 0;
     position: relative;
     margin-bottom: 100px;
-} 
+}
 
 .about-rs h1:first-child {
     color: white;
@@ -1069,7 +1069,7 @@ footer #tripadvisor i {
                             /*DESTINATIONS*/
 
 #destinations-header {
-    background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.9)),url('../images/header-photos/dest-header2.jpg');
+    background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.9)),url('../images/header-photos/destinations-header.webp');
 }
 
 .dest-card {
@@ -1167,27 +1167,27 @@ footer #tripadvisor i {
 }
 
 #Amsterdam .dest-image {
-    background: url("../images/destinations/ams.jpg") center no-repeat;
+    background: url("../images/destinations/ams.webp") center no-repeat;
     background-size: cover;
 }
 
 #London .dest-image {
-    background: url("../images/destinations/ldn.jpg") bottom no-repeat;
+    background: url("../images/destinations/ldn.webp") bottom no-repeat;
     background-size: cover;
 }
 
 #Toronto .dest-image {
-    background: url("https://images.unsplash.com/photo-1444946112669-f13c38fe14a0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80") right no-repeat;
+    background: url("../images/destinations/trn.webp") center no-repeat;
     background-size: cover;
 }
 
 #Paris .dest-image {
-    background: url("https://images.unsplash.com/photo-1507666664345-c49223375e33?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1353&q=80") center no-repeat;
+    background: url("../images/destinations/prs.webp") center no-repeat;
     background-size: cover;
 }
 
 #Barcelona .dest-image {
-    background: url("https://images.unsplash.com/photo-1539037116277-4db20889f2d4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80") center no-repeat;
+    background: url("../images/destinations/bcn.webp") center no-repeat;
     background-size: cover;
 }
 
@@ -1447,7 +1447,7 @@ footer #tripadvisor i {
 /* ############################################################ */
                             /*CONTACT US*/
 #contact-us-header  {
-    background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.9)),url('../images/header-photos/contact-us-header.webp');
+    background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.9)),url('../images/header-photos/contact-header.webp');
 }
 
 #contact {
