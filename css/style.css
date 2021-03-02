@@ -865,7 +865,7 @@ footer #tripadvisor i {
                             /*ABOUT*/
 
 #about-header  {
-    background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.9)), url('../images/header-photos/about-header.webp');
+    background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.5)), url('../images/header-photos/about-header.webp');
 }
 
 .sub-pages-header .fa-bars, .sub-pages-header .fa-times {
@@ -1069,7 +1069,7 @@ footer #tripadvisor i {
                             /*DESTINATIONS*/
 
 #destinations-header {
-    background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.9)),url('../images/header-photos/destinations-header.webp');
+    background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.5)),url('../images/header-photos/destinations-header.webp');
 }
 
 .dest-card {
@@ -1349,7 +1349,7 @@ footer #tripadvisor i {
 }
 
 #events-header {
-    background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.9)),url(../images/header-photos/events-header.webp);
+    background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.5)),url(../images/header-photos/events-header.webp);
 }
 
 .events-card h2 {
@@ -1447,7 +1447,7 @@ footer #tripadvisor i {
 /* ############################################################ */
                             /*CONTACT US*/
 #contact-us-header  {
-    background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.9)),url('../images/header-photos/contact-header.webp');
+    background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,0.5)),url('../images/header-photos/contact-header.webp');
 }
 
 #contact {
