@@ -132,7 +132,7 @@ a {
 }
 
 hr {
-    border: 3px solid var(--primary-green);
+    border: 2px solid var(--primary-green);
     background-color: var(--primary-green);
 }
 
@@ -1393,7 +1393,7 @@ footer #tripadvisor i {
 /*MEDIA QUERIES*/
 
 @media screen and (max-width: 768px) {
-    #events-wrapper {
+    #events-wrapper, #about-wrapper {
         margin: 50px auto;
     }
 
@@ -1434,7 +1434,7 @@ footer #tripadvisor i {
 #contact {
     width: 95%;
     max-width: 1700px;
-    margin: 75px auto;
+    margin: 50px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
