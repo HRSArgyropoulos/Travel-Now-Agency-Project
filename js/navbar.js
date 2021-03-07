@@ -1,6 +1,5 @@
 "use strict";
 
-window.onload = function () {
   const nav = document.getElementById("navbar");
   const footer = document.getElementById("footer");
   const icon = document.getElementsByClassName("fa");
@@ -29,4 +28,3 @@ window.onload = function () {
       for (const icn of icon) icn.classList.remove("fa-xs");
     }
   };
-};
