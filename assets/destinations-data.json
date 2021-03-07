@@ -4,7 +4,20 @@
         "image": "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
         "days": 5,
         "price": 549,
-        "iata": "AMS"
+        "iata": "AMS",
+        "data" : {
+            "info": [
+                "Amsterdam, the capital of the Netherlands, is one of the most popular tourist destinations in Europe. With its universities, academies, and research institutes, along with more than 40 museums, numerous theaters, and entertainment venues, Amsterdam is also the country's leading cultural center.",
+                "If you've been to Amsterdam before and seen the highlights, or you just have a passion for discovering the unknown, then head out of the city and into the wider Amsterdam Area where you'll be rewarded by stunning landscapes and memorable activities."],
+            "schedule": [
+                "Arrive in the city. Head over to the hotel and relax. We'll take a quick tour in the city center in the evening.",
+                "Visit Rijksmuseum, Van Gogh Museum and the The Botanical Gardens.",
+                "Walk in the Vondelpark (the largest park in Amsterdam), the Dam Square as well as the Artis (Amsterdam's Royal Zoo).",
+                "Explore more of the city center, take a cruise in the famous Amsterdam canals and visit some of the capitals popular coffee shops.",
+                "Its time to take a flight back home."
+            ],
+            "dates": ["25/3", "29/3", "4/4", "26/4", "5/5"]
+        }
     },
     {
         "location": "London",
