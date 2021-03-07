@@ -6,7 +6,7 @@ const resultsList = document.getElementById("search-drop-results");
 
 //array with objects of destinations -> JSON
 window.addEventListener('DOMContentLoaded', () => {
-    fetch('./destinations-data.json')
+    fetch('assets/destinations-data.json')
         .then(response => response.json())
         .then(json => search(json));
 });

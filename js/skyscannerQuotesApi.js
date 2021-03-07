@@ -77,7 +77,7 @@ const getQuotes = (destination) => {
 };
 
 
-fetch("./destinations-data.json") //get destinations data (JSON)
+fetch("assets/destinations-data.json") //get destinations data (JSON)
 .then(response => response.json())
 .then(destinations => {
     for (const destination of destinations) {
