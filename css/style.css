@@ -223,9 +223,13 @@ nav ul li {
 
 nav .openMenu, nav .closeMenu{
     font-size: 2rem;
-    margin:20px;
+    margin: 20px;
     cursor: pointer;
     display: none;
+}
+
+nav .closeMenu {
+    margin-right: 23px;
 }
 
 @media (max-width: 768px) {
@@ -240,7 +244,8 @@ nav .openMenu, nav .closeMenu{
         justify-content: center;
         background: #000000;
         display: none;
-        transition: top 1s ease;
+        transition: left 1s ease;
+        text-align: center;
     }
 
     nav #nav-items .closeMenu {
