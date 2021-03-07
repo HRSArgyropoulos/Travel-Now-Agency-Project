@@ -33,19 +33,14 @@ regexOnBlurCheck("first-name",regexFName);
 const regexLName = /^[a-zA-Z]+$/; //one name without spaces or numbers
 regexOnBlurCheck("last-name",regexLName);
 
-//telephone (regex blur)
-const regexTel = /^69([ -]{1})?\d{8}$/;
-regexOnBlurCheck("mob-phone",regexTel);
+//email (regex blur)
+const regexEmail = /^[\w\d]+([.-][\w\d]+)*?[@]{1}(\w)+[.]{1}(\w)+$/;
+regexOnBlurCheck("email",regexEmail);
+regexOnBlurCheck("email2",regexEmail);
 
 //get emails
 const email = form["email"];
 const email2 = form["email2"];
-
-//check email for '@' (blur)
-const checkEmail = (ml) => {
-  blursError = ml.value.indexOf('@') < 0; // if value < 0 (-1) -> @ not found -> error true
-  error(ml,blursError);
-}
 
 //check both emails if they are the same (blur 2nd email)
 const emailSameCheck = (ml1,ml2) => {
@@ -55,11 +50,10 @@ const emailSameCheck = (ml1,ml2) => {
 }
 
 //email listeners (blur)
-email.addEventListener('blur', () => checkEmail (email));
-email2.addEventListener('blur', () => {checkEmail (email2); emailSameCheck(email,email2);});
+email2.addEventListener('blur', () => {emailSameCheck(email,email2);});
 
 //empty (submit)
-form.addEventListener('submit', event => { 
+form.addEventListener('submit', event => {
   const inputs = Array
   .from(form.getElementsByTagName('input')); //make array from inputs of form
   inputs.push(form["message"]); //push message/textarea to the array
@@ -77,5 +71,5 @@ form.addEventListener('submit', event => {
   if (isEmpty || blursError) { //outside of for each to get all missing inputs
     event.preventDefault(); //do not do the event (submit)
   }
-  
+
 })

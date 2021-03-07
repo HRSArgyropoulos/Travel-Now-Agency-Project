@@ -1445,7 +1445,7 @@ footer #tripadvisor i {
 
 #form-wrapper {
     box-shadow: 0 1px 5px 0 rgb(0 0 0 / 30%);
-    border-radius: 10px;
+    border-radius: 5px;
     flex: 0 1 35%;
 }
 
@@ -1457,10 +1457,11 @@ footer #tripadvisor i {
 #contact h2 {
     font-size: 1.7em;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 #contact-form label {
-    color: var(--dark-grey);
+    color: black;
 }
 
 #contact-form input, #contact-form textarea, #contact-form select {
@@ -1495,6 +1496,17 @@ footer #tripadvisor i {
 #contact button {
     width: 100%;
     margin: 0 auto;
+    transition: 0.2s ease-in-out;
+}
+
+#contact button:hover {
+    transform: scale(1.03);
+}
+
+@media (max-width: 420px) {
+    #contact-form {
+        padding: 1.5rem 1rem;
+    }
 }
 
 /* FAQ */
