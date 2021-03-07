@@ -4,10 +4,8 @@ fetch("assets/destinations-data.json")
 .then(destinations => {
     destinations.forEach(destination => {
         const data = destination.data;
-        //console.log(data);
         const fields = document.querySelectorAll(`#${destination.location} .display-dest-content > li`); //get info/schedule/dates/prices field to insert data
-        console.log(fields);
-        //Info field [0]
+        //console.log(fields);
         dataInfo(data.info, fields[0]);
         dataSchedule(data.schedule, fields[1]);
         dataDates(data.dates,fields[2]);
@@ -50,8 +48,8 @@ const dataPrices = (data, li) => {
     title.innerText = `Starting from ${data} £`;
     li.appendChild(title);
 
-    const excludingText = document.createElement("h4");
-    excludingText.innerText = "Excluding:";
+    const excludingText = document.createElement("span");
+    excludingText.innerHTML = "<u>Excluding:</u>";
     li.appendChild(excludingText);
 
     const exludingList = document.createElement("ul");
