@@ -47,6 +47,11 @@ a {
     border-radius: 10px;
     border: none;
     cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.green-button:hover {
+    transform: scale(1.05);
 }
 
 .green-button a {
@@ -1496,11 +1501,6 @@ footer #tripadvisor i {
 #contact button {
     width: 100%;
     margin: 0 auto;
-    transition: 0.2s ease-in-out;
-}
-
-#contact button:hover {
-    transform: scale(1.03);
 }
 
 @media (max-width: 420px) {
