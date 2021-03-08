@@ -22,7 +22,7 @@ const dataInfo = (data, li) => {
 }
 
 const dataSchedule = (data, li) => {
-    for (let day = 1; day<data.length; day++) {
+    for (let day = 1; day<=data.length; day++) {
         const dayTitle = document.createElement("h3");
         dayTitle.innerText = `Day ${day}`;
         li.appendChild(dayTitle);
