@@ -1,7 +1,7 @@
 [
     {
         "location": "Amsterdam",
-        "image": "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+        "image": "images/destinations/search/ams.webp",
         "days": 5,
         "price": 549,
         "iata": "AMS",
@@ -21,7 +21,7 @@
     },
     {
         "location": "London",
-        "image": "./images/destinations/ldn.jpg",
+        "image": "images/destinations/search/ldn.webp",
         "days": 6,
         "price": 659,
         "iata": "LHR",
@@ -43,7 +43,7 @@
     },
     {
         "location": "Toronto",
-        "image": "https://images.unsplash.com/photo-1517090504586-fde19ea6066f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+        "image": "images/destinations/search/trn.webp",
         "days": 8,
         "price": 999,
         "iata": "YYZ",
@@ -67,7 +67,7 @@
     },
     {
         "location":"Paris",
-        "image": "https://images.unsplash.com/photo-1508050919630-b135583b29ab?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80",
+        "image": "images/destinations/search/prs.webp",
         "days": 6,
         "price": 599,
         "iata": "CDG",
@@ -89,7 +89,7 @@
     },
     {
         "location": "Barcelona",
-        "image": "https://images.unsplash.com/photo-1587789202069-f57c846b85db?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80",
+        "image": "images/destinations/search/bcn.webp",
         "days": 4,
         "price": 399,
         "iata" : "BCN",
