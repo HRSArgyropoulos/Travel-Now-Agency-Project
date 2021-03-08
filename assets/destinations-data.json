@@ -16,7 +16,7 @@
                 "Explore more of the city center, take a cruise in the famous Amsterdam canals and visit some of the capitals popular coffee shops.",
                 "Its time to take a flight back home."
             ],
-            "dates": ["25/03/21", "29/03/21", "04/04/21", "26/04/21", "05/05/21"]
+            "dates": ["25/03/21", "29/03/21", "04/04/21"]
         }
     },
     {
@@ -38,7 +38,7 @@
                 "Visit the British Museum and free day (or opt for a day in Cambridge).",
                 "Time to take a flight back home."
             ],
-            "dates": ["23/03/21", "30/03/21", "05/04/21", "24/04/21", "05/05/21"]
+            "dates": ["23/03/21", "30/03/21"]
         }
     },
     {
@@ -62,7 +62,7 @@
                 "Free day to explore the city even more. (ask us for more details)",
                 "Time to take a flight back home."
             ],
-            "dates": ["25/03/21", "29/03/21", "04/04/21", "26/04/21", "05/05/21"]
+            "dates": ["25/03/21", "29/03/21"]
         }
     },
     {
@@ -84,7 +84,7 @@
                 "Free day for shopping.",
                 "Time to take a flight back home."
             ],
-            "dates": ["25/03/21", "29/03/21", "04/04/21", "26/04/21"]
+            "dates": ["25/03/21", "29/03/21"]
         }
     },
     {
@@ -104,7 +104,7 @@
                 "We have a tour for the football fans at Camp Nou, Barcelona's FC stadium. We will then vist the Park Guell by the famous visionary architect Antoni Gaudi.",
                 "Time to take a flight back home."
             ],
-            "dates": ["25/03/21", "29/03/21", "04/04/21", "26/04/21", "05/05/21"]
+            "dates": ["25/03/21", "29/03/21", "04/04/21"]
         }
     }
 ]

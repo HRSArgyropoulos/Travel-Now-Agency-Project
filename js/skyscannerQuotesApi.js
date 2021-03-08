@@ -2,7 +2,7 @@
 
 const SKYURL = "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices"; //skyscanner api base url
 
-const requestQuotes = (location,url) => { //get quote(s) for a specific location
+const requestQuotes = (location,url,date) => { //get quote(s) for a specific location
     flightPromises.push(    //push promise into flightPromises array - see getQuotes function
     fetch(url, {    //request quotes from api
         "method" : "GET",
@@ -16,6 +16,11 @@ const requestQuotes = (location,url) => { //get quote(s) for a specific location
     .then(flights => {
         console.log(flights);
         let flightsList = document.querySelector(`#${location} .flightQuotes ul`); //get list to add flight quotes
+
+        //DATE
+        const dateLi = document.createElement("h5");
+        dateLi.innerText = date;
+        flightsList.appendChild(dateLi);
 
         if (flights.Quotes.length === 0) {
             const li = document.createElement("span");
@@ -70,22 +75,20 @@ const getQuotes = (destination) => {
         tab.addEventListener("click", () => {
             if (document.querySelector(`#${destination.location} .flightQuotes ul`).innerHTML===""){ //if list is empty (no results added yet)
                 Promise.allSettled(flightPromises).then(() => { //ensure that the previous fetch requests have been "fullfilled" - wait / async
-                    let quoteURL = SKYURL + "/browsequotes/v1.0"; //quotes endpoint
                     quoteQuery.destinationPlace = `${destination.iata}`;
-
                     /* destination.data.dates[0] */
                     //console.log(calculateDate("2021-02-28",10));
                     //console.log(convertDate("05/04/21"));
-
-                    quoteQuery.outboundPartialDate = convertDate(destination.data.dates[0]);
-                    quoteQuery.inboundPartialDate = calculateDate(quoteQuery.outboundPartialDate, destination.days);
-
-
-                    for (const parameter in quoteQuery) { //create url from which to fetch - we could do part of this outside of getQuotes
-                        quoteURL += `/${quoteQuery[parameter]}`;
-                    }
-                    console.log(quoteURL);
-                    requestQuotes(destination.location,quoteURL);
+                    destination.data.dates.forEach(date => {
+                        let quoteURL = SKYURL + "/browsequotes/v1.0"; //quotes endpoint
+                        quoteQuery.outboundPartialDate = convertDate(date);
+                        quoteQuery.inboundPartialDate = calculateDate(quoteQuery.outboundPartialDate, destination.days);
+                        for (const parameter in quoteQuery) { //create url from which to fetch - we could do part of this outside of getQuotes
+                            quoteURL += `/${quoteQuery[parameter]}`;
+                        }
+                        console.log(quoteURL);
+                        requestQuotes(destination.location,quoteURL,date);
+                    })
                 })
             }
         });
