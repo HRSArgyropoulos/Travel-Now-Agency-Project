@@ -634,6 +634,10 @@ nav .closeMenu {
         font-size: 2.5rem;
     }
 
+    #customer-reviews li{
+        flex: 0 0 100% !important;
+    }
+
     #customer-reviews p {
         margin: 0.5rem 0;
     }
@@ -783,7 +787,7 @@ footer #tripadvisor i {
     color: var(--primary-green);
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 650px) {
     footer ul li{
         width: 100%;
     }
