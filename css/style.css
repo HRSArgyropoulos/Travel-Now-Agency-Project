@@ -579,8 +579,8 @@ nav .closeMenu {
 }
 
 #review-header {
-    background-color:rgb(37, 13, 65);
-    color: white;
+    background-color:var(--purple);
+    color: black;
     position: relative;
 }
 
