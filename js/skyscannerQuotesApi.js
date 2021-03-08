@@ -14,8 +14,16 @@ const requestQuotes = (location,url) => { //get quote(s) for a specific location
     })
     .then(response => response.json())
     .then(flights => {
-        //console.log(flights);
+        console.log(flights);
         let flightsList = document.querySelector(`#${location} .flightQuotes ul`); //get list to add flight quotes
+
+        if (flights.Quotes.length === 0) {
+            const li = document.createElement("span");
+            li.innerText = "No flight prices found for this date. Try again later";
+            li.style.color = "red";
+            flightsList.appendChild(li);
+        }
+
         flights.Quotes.forEach(quote => {
             let quoteLi = document.createElement("li"); //n-th quote
             //Origin
@@ -64,12 +72,19 @@ const getQuotes = (destination) => {
                 Promise.allSettled(flightPromises).then(() => { //ensure that the previous fetch requests have been "fullfilled" - wait / async
                     let quoteURL = SKYURL + "/browsequotes/v1.0"; //quotes endpoint
                     quoteQuery.destinationPlace = `${destination.iata}`;
-                    let outboundDay = parseInt(quoteQuery.outboundPartialDate.slice(8,10))+destination.days; //get "DD" from date and add the days from the destination data
-                    //here for simplicity we wont check if the date created will be valid
-                    quoteQuery.inboundPartialDate = quoteQuery.outboundPartialDate.slice(0,8)+outboundDay; // get "YYYY-MM-" and concatenate it with "DD"
+
+                    /* destination.data.dates[0] */
+                    //console.log(calculateDate("2021-02-28",10));
+                    //console.log(convertDate("05/04/21"));
+
+                    quoteQuery.outboundPartialDate = convertDate(destination.data.dates[0]);
+                    quoteQuery.inboundPartialDate = calculateDate(quoteQuery.outboundPartialDate, destination.days);
+
+
                     for (const parameter in quoteQuery) { //create url from which to fetch - we could do part of this outside of getQuotes
                         quoteURL += `/${quoteQuery[parameter]}`;
                     }
+                    console.log(quoteURL);
                     requestQuotes(destination.location,quoteURL);
                 })
             }
@@ -85,4 +100,22 @@ fetch("assets/destinations-data.json") //get destinations data (JSON)
     };
 });
 
+const calculateDate = (date,days) => {
+    let newDate = new Date(date);
+    newDate.setDate(newDate.getDate() + days);
+    return newDate.toISOString().slice(0,10); //2011-10-05T14:48:00.000Z (get first 10 indexes of ISO format)
+}
 
+const convertDate = (date) => {
+    //date format (DD/MM/YY) -> YYYY-MM-DD
+    const dateArr = date.split("/");
+    dateArr[2] = "20" + dateArr[2];
+    console.log(dateArr);
+
+    const swap = dateArr[0];
+    dateArr[0] = dateArr[2];
+    dateArr[2] = swap;
+    console.log(dateArr);
+
+    return (dateArr.join("-"));
+}
